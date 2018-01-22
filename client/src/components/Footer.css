@@ -1,0 +1,18 @@
+footer {
+  text-align: center;
+  line-height: 50px;
+  margin: auto;
+}
+
+.copyright {
+  color: #333;
+  display: inline-block;
+}
+
+/*************** || RESPONSIVE DESIGN || ***************/
+
+@media only screen and (min-width: 310px) and (max-width: 374px) {
+  .portfolioGithub {
+    display: none;
+  }
+}

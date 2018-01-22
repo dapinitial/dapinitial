@@ -1,0 +1,27 @@
+{
+  "name": "puertofolio",
+  "version": "1.0.0",
+  "description": "David Puerto portfolio",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dapintial/dapinitial.git"
+  },
+  "author": "David Puerto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dapintial/dapinitial/issues"
+  },
+  "homepage": "https://github.com/dapintial/dapinitial#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.15.5",
+    "nodemailer": "^4.1.1",
+    "raf": "^3.4.0"
+  }
+}

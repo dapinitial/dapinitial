@@ -1,0 +1,50 @@
+/***********************************************************************************
+ *	- CONTACT FORM
+ ***********************************************************************************/ 	
+ 	
+ #contact-form { 
+   width: 50%;
+  }
+	
+ #contact-form label {
+   display: block;
+ }
+ 
+ #contact-form label.error {
+   position: relative;
+   top: -20px;
+   margin-bottom: 10px;
+   color: #f00;
+ }
+ 
+ #contact-form textarea,
+ #contact-form input[type="text"],
+ #contact-form input[type="email"] {
+   font-size: 16px;
+   margin-bottom: 30px;
+   padding: 10px;
+   border: none;
+   border-bottom: 1px solid #ccc;
+   width: 100%;
+ }
+ 
+ #contact-form #submit-message {
+   cursor: pointer;
+   display: inline-block;
+   float: right;
+   font-weight: 700;
+   letter-spacing: 4px;
+   text-transform: uppercase;
+   padding: 11px 20px 11px 24px;
+   margin-top: 10px;
+   border: 2px solid #1c1c1c;
+   background-color: transparent;
+   -webkit-transition: all 0.3s;
+       transition: all 0.3s;
+ }
+ 
+ #contact-form #submit-message:hover {
+   background-color: #1c1c1c;
+   color: #fff;
+ }
+ 

@@ -1,0 +1,210 @@
+.wrapper {
+  min-height: calc(100vh - 50px);
+  max-width: 1440px;
+  min-width: 320px;
+  margin: auto;
+}
+
+.homeContainer {
+  background: url(../images/home-bg.jpg) no-repeat;
+  height: 100vh;
+  overflow: hidden;
+  margin: auto;
+}
+
+.homeContainerPattern {
+  background: url(../images/home-pattern.png) no-repeat;
+}
+
+
+/*************** || HEADER || ***************/
+
+.imageLayer1 {
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+}
+
+.header {
+
+}
+
+.nameLink {
+  background: url(../images/d.svg) no-repeat;
+  width: 107px;
+  height: 63px;
+  display: block;
+  color: #222;
+  margin: 10px;
+}
+
+.nameLink:hover {
+  color: #777;
+}
+
+.socialLinks {
+  position: absolute;
+  left: 80%;
+  top: 20px;
+}
+
+.socialIcons {
+  height: 45px;
+  width: 45px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+
+.socialIcons:hover {
+  background-color: #99C24D;
+}
+
+/*************** || NAVIGATION || ***************/
+
+.menuBlock {
+}
+
+.menuContainer {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.sectionLinks {
+  opacity: 0.6;
+	height: 75px;
+  font-size: 2rem;
+	color: #222;
+  line-height: 75px;
+  padding: 20px;
+  cursor: pointer;
+  color: #fff;
+  display: inline-block;
+  float: left;
+  width: auto;
+}
+
+.sectionLinks:hover {
+	background-color: #F18F01;
+	color: #2E4057;
+	font-weight: bold;
+}
+
+
+
+/* GON NEXT SECTION */
+.go-next-section {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+}
+
+.go-next-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.go-next-section i {
+  display: block;
+  font-size: 22px;
+  line-height: 18px;
+}
+
+.go-next-section i:nth-child(1) {
+  -webkit-animation: opacity1 1.2s linear infinite;
+      animation: opacity1 1.2s linear infinite;
+}
+
+.go-next-section i:nth-child(2) {
+  -webkit-animation: opacity2 1.2s linear 0.3s infinite;
+      animation: opacity2 1.2s linear 0.3s infinite;
+}
+
+.go-next-section i:nth-child(3) {
+  -webkit-animation: opacity3 1.2s linear 0.6s infinite;
+      animation: opacity3 1.2s linear 0.6s infinite;
+}
+
+.go-next-section i:nth-child(4) {
+  -webkit-animation: opacity4 1.2s linear 0.9s infinite;
+      animation: opacity4 1.2s linear 0.9s infinite;
+  
+}
+
+@-webkit-keyframes opacity1 {
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes opacity1 {
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@-webkit-keyframes opacity2 {
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes opacity2 {
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@-webkit-keyframes opacity3 {
+  50% {
+    oopacity: 0.2;
+  }
+}
+
+@keyframes opacity3 {
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@-webkit-keyframes opacity4 {
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes opacity4 {
+  50% {
+    opacity: 0.2;
+  }
+}
+
+
+/*************** || RESPONSIVE DESIGN || ***************/
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+  .header {
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 1925px) {
+  .headerImage {
+    background-size: cover;
+  }
+}

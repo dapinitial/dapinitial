@@ -1,6 +1,6 @@
 # portfolio
 David Puerto's portfolio in progress
-# dapinitial
+# upload to davidpuerto.com on AWS ec2 Ubuntu
 
 ## TODO:
 - Write content

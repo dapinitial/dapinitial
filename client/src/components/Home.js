@@ -49,14 +49,9 @@ class Home extends Component {
               className='homeContainer full-section full-screen dark-section parallax'
               data-stellar-background-ratio='0.1'>
               <div className="full-section-container">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-sm-12">
-                      <div className="Clock-title">Countdown to {this.state.countdownEvent}</div>
-                      <Clock deadline={this.state.deadline}/>
-                    </div>
-                  </div>
-                </div>
+                <div className="Clock-title">Countdown to {this.state.countdownEvent}</div>
+                <Clock deadline={this.state.deadline}/>
+
               </div>
               <div
                 className='homeContainerPattern full-section-pattern parallax'

@@ -1,11 +1,12 @@
 footer {
+  user-select: none;
   text-align: center;
   line-height: 50px;
   margin: auto;
 }
 
 .copyright {
-  color: #333;
+  color: #eee;
   display: inline-block;
 }
 

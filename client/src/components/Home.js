@@ -4,8 +4,7 @@ import './Home.css';
 import Clock from './Clock';
 import About from './About.js';
 import Contact from './Contact.js';
-import Blog from './Blog.js';
-import Projects from './Projects.js';
+// import Blog from './Blog.js'; import Projects from './Projects.js';
 import {Power4, TweenLite} from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 import Footer from './Footer.js';
@@ -53,27 +52,28 @@ class Home extends Component {
             <div className='menuBlock'></div>
             <div className='menuContainer'>
 
-              <div className='sectionLinks'>
-                <Link onClick={this.handleClick} to='/about'>about</Link>
-              </div>
-              <div className='sectionLinks'>
+              <Link onClick={this.handleClick} to='/about'>
+                <div className='sectionLinks'>about</div>
+              </Link>
+
+              {/* <div className='sectionLinks'>
                 <Link onClick={this.handleClick} to='/blog'>
                   blog</Link>
               </div>
               <div className='sectionLinks'>
                 <Link onClick={this.handleClick} to='/projects'>
                   projects</Link>
-              </div>
-              <div className='sectionLinks'>
-                <Link onClick={this.handleClick} to='/contact'>
-                  contact</Link>
-              </div>
+              </div> */}
+
+              <Link onClick={this.handleClick} to='/contact'>
+                <div className='sectionLinks'>contact</div>
+              </Link>
+
             </div>
 
             <div className='mainSectionContainer'>
-              <Route path="/about" component={About}/>
-              <Route path="/blog" component={Blog}/>
-              <Route path="/projects" component={Projects}/>
+              <Route path="/about" component={About}/> {/* <Route path="/blog" component={Blog}/>
+              <Route path="/projects" component={Projects}/> */}
               <Route path="/contact" component={Contact}/>
             </div>
 

@@ -1,4 +1,5 @@
 .sectionContainer {
+  background: ivory;
   padding: 40px;
 }
 
@@ -14,7 +15,8 @@
   height: 70px;
   line-height: 70px;
   top: 0;
-  background: rgba(0,0,0,.25);
+  color: #1a1a1a;
+  box-shadow: -13px -2px 6px 0px rgba(0,0,0,.25);
 }
 
 .sectionHeaderNavigation {
@@ -63,8 +65,9 @@
   text-decoration: none;
   cursor: pointer;
   border-radius: 50%;
-  border: 2px solid #1c1c1c;
+  /*border: 2px solid #1c1c1c;*/
   background-color: #fff;
+  box-shadow: 0px 1px 5px;
   color: #1c1c1c;
   -webkit-transition: all 0.3s;
       transition: all 0.3s;

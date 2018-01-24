@@ -38,9 +38,10 @@
 ***********************************************************************************/
 
 .countdown {
+  user-select: none;
   margin: 50px 0;
   text-align: center;
-  color: rgba(0,0,0,.84);
+  color: rgba(255,255,255,.14);
 }
 
 .countdown {
@@ -92,7 +93,6 @@
 }
 
 .Clock-title {
-  color: #111;
   text-align: center;
   font-size: 24px;
   position: relative;

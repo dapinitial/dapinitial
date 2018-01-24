@@ -46,6 +46,7 @@
 }
 
 .socialLinks {
+  user-select: none;
   position: absolute;
   left: 80%;
   top: 20px;
@@ -77,23 +78,21 @@
 }
 
 .sectionLinks {
-  opacity: 0.6;
+  color: #fff;
 	height: 75px;
   font-size: 2rem;
-  color: #222;
   font-weight: bold;
   line-height: 75px;
   padding: 20px;
   cursor: pointer;
-  color: #fff;
   display: inline-block;
   float: left;
   width: auto;
 }
 
 .sectionLinks:hover {
+  color: #000;
 	background-color: #F18F01;
-	color: #2E4057;
 }
 
 /* GO NEXT SECTION */
@@ -204,5 +203,70 @@
 @media only screen and (min-width: 1925px) {
   .headerImage {
     background-size: cover;
+  }
+}
+
+.shimmer {
+  color: rgba(255,255,255,0.1);
+  background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 1.87s;
+  -moz-animation-duration: 1.87s;
+  animation-duration: 1.87s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #222;
+}
+
+.shimmer:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+
+@-moz-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-o-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
   }
 }

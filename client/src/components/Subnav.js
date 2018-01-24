@@ -43,14 +43,14 @@ class Subnav extends Component {
   render() {
     return (
       <div>
-        <div className='sectionHeaderLayer'></div>
+        {/* <div className='sectionHeaderLayer'></div>
         <div className='sectionHeaderContainer'>
           <div className='sectionHeaderNavigation'>
             <div className='sectionTitle'>
               {this.props.section}
             </div>
           </div>
-        </div>
+        </div> */}
         <Link
           id="go-top"
           onClick={this.handleClick}

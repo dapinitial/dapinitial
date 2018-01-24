@@ -13,7 +13,7 @@ class Footer extends Component {
             <p>
               <strong>"From Kentucky well-water to whale-watchin' off my back porch."</strong>
               <br/>
-              Thanks for visiting
+              Thank you for visiting
             </p>
           </div>
         </footer>

@@ -13,20 +13,41 @@ class About extends Component {
               <br/>
               Me</h2>
           </div>
-          <p>BORN, Hasn't died, yet. "From Ketucky well-water to whale watching off my
-            backporch," I'm not originally from Kentucky but I'm down with the unbridled
-            spirit. I like scars, marks, and prison tattoos. Runaways, gypsies, military
-            brats, the homeless, victims of violence. If you don't realm here, that's okay,
-            we likely won't be lasting friends unless you're hot and flirty. You're welcome
-            to try me out though. I decided to learn JavaScript and I built this entire
-            project in React. Check it out on Github. After living in 8 states and two
-            countries before I was eighteen years, young me kept up the vegabond trend and
-            explored a myriad of lifestyles, before arriving at clarity. Still shaping my
-            future self along this road to perdition, you can catch me outside, doin' it,
-            waxing poetic, worldwide, across the United States to Western Cape, the
-            Patagonia, Andean Colombia, down unda, Tokyo to Hakuba. How bout that?
+          <h3>Quick rundown:</h3>
+          <p>BORN, Hasn't died, yet. Globalwarmready. I'm, single, no kids, young and
+            mentally mature. "From Ketucky well-water to whale watching off my backporch,"
+            I'm not originally from Applachia but thanks to it I'm forever partial to the
+            unbridled spirits. A gypsy by nature and all heart, I reside in the Pacific
+            Northwest and call Seattle home. When not appreciating the outdoors and extreme
+            sports, motorcycling, and pushing classic cars, I read and study JavaScript, and
+            train (hard). I built this entire project in React and my educational background
+            is design science. Check me out on Github. You can catch me outside, doin' it,
+            waxing poetic, beachcombing, island hopping, adventuring worldwide, across the
+            United States to Western Cape, the Patagonia, Andean Colombia, Oz, from Tokyo to
+            Hakuba. How bout dat?
           </p>
-
+          <h3>Current physical fitness:</h3>
+          <ul>
+            <li>sub 25:00 4 mile run</li>
+            <li>sub 30:00 mile swim</li>
+            <li>21 strict pull ups</li>
+            <li>100+ pushups 2 minutes</li>
+            <li>110+ situps 2 minutes</li>
+            <li>4X25m underwaters - no problem</li>
+          </ul>
+          <br/>
+          <h3>Where to find me:</h3>
+          <ul>
+            <li>Motown Monday's</li>
+            <li>The Saint for Tacos, Tuesday</li>
+            <li>Seattle Bouldering Project</li>
+            <li>Swimming and group fitness at the Y</li>
+            <li>Da Mystery of Chessboxin': Occidental Park</li>
+            <li>Pioneer Square art walks</li>
+            <li>"Red light on Main"</li>
+            <li>Running the waterfront, real fast and styley</li>
+            <li>Om Culture Sunday nights</li>
+          </ul>
         </div>
       </div>
     );

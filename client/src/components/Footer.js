@@ -12,6 +12,8 @@ class Footer extends Component {
           <div className='copyright'>
             <p>
               <strong>"From Kentucky well-water to whale-watchin' off my back porch."</strong>
+              <br/>
+              Thanks for visiting
             </p>
           </div>
         </footer>

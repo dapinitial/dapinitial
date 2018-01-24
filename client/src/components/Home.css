@@ -80,7 +80,8 @@
   opacity: 0.6;
 	height: 75px;
   font-size: 2rem;
-	color: #222;
+  color: #222;
+  font-weight: bold;
   line-height: 75px;
   padding: 20px;
   cursor: pointer;
@@ -93,12 +94,9 @@
 .sectionLinks:hover {
 	background-color: #F18F01;
 	color: #2E4057;
-	font-weight: bold;
 }
 
-
-
-/* GON NEXT SECTION */
+/* GO NEXT SECTION */
 .go-next-section {
   position: absolute;
   z-index: 3;

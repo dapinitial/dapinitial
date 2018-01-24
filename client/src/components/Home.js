@@ -13,16 +13,7 @@ import Footer from './Footer.js';
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      deadline: 'January 29, 2018',
-      newDeadline: '',
-      countdownEvent: 'Japanuary trip'
-    };
-  }
-
-  changeDeadline() {
-    //console.log('state', this.state);
-    this.setState({deadline: this.state.newDeadline});
+    this.state = {};
   }
 
   handleClick() {
@@ -49,9 +40,7 @@ class Home extends Component {
               className='homeContainer full-section full-screen dark-section parallax'
               data-stellar-background-ratio='0.1'>
               <div className="full-section-container">
-                <div className="Clock-title">Countdown to {this.state.countdownEvent}</div>
                 <Clock deadline={this.state.deadline}/>
-
               </div>
               <div
                 className='homeContainerPattern full-section-pattern parallax'

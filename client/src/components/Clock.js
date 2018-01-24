@@ -8,16 +8,24 @@ class Clock extends Component {
       days: 0,
       hours: 0,
       minutes: 0,
-      seconds: 0
-    }
+      seconds: 0,
+      deadline: 'February 8, 2018',
+      newDeadline: '',
+      countdownEvent: 'Japanuary ends:'
+    };
+  }
+
+  changeDeadline() {
+    //console.log('state', this.state);
+    this.setState({deadline: this.state.newDeadline});
   }
 
   componentWillMount() {
-    this.getTimeUntil(this.props.deadline);
+    this.getTimeUntil(this.state.deadline);
   }
 
   componentDidMount() {
-    setInterval(() => this.getTimeUntil(this.props.deadline), 1000);
+    setInterval(() => this.getTimeUntil(this.state.deadline), 1000);
   }
 
   // leading0(num) {   if (num < 10) {     return '0' + num   }   return num; }
@@ -41,6 +49,8 @@ class Clock extends Component {
   render() {
     return (
       <div className="countdown text-center">
+        <div className="Clock-title">{this.state.countdownEvent}</div>
+        <br/>
         <div className="days">{this.leading0(this.state.days)}
           <span>days</span>
         </div>

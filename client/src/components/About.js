@@ -14,23 +14,29 @@ class About extends Component {
               Me</h2>
           </div>
           <h3 className="shimmer">Rundown:</h3>
-          <p>BORN, Hasn't died, yet. Globalwarmready. I'm, single, no kids, young and
-            mentally mature. "From Ketucky well-water to whale watching off my backporch,"
-            I'm not originally from Applachia but thanks to it I'm forever partial to the
-            unbridled spirits. A gypsy since birth and all heart by nature, I reside in the
-            Pacific Northwest and call Seattle home. When not appreciating the outdoors and
-            extreme sports, indulging in the finer things in life, motorcycling, and pushing
-            classic cars, I read and study JavaScript, funk around with CSS, and train
-            (hard). I built this entire project in React and Node and deployed to an
-            ec2-instance on AWS-Ubuntu. My educational background is design science and I'm
-            a bit of a tinkerer and I like making stuff that people think is cool. "From
-            brainchild to launch." I love CSS bugs and pattern libraries. in 2015 I took
-            first place at Seattle's largest hackathon with my team SpaceLabForever and I am
-            always up for new hackathon opporunties and remote work. Check me out on Github
-            and CodePen and StackOverflow and find me on IRC. Otherwise catch me outside,
-            doin' it, waxing poetic, beachcombing, island hopping, adventuring worldwide,
-            across the United States to Western Cape, the Patagonia, Andean Colombia, Oz,
-            from Tokyo to Hakuba. How bout dat?
+          <h4>"From Ketucky well-water to whale watching off my backporch,"
+          </h4>
+          <p>BORN, Hasn't died, yet. Young and mentally mature. I'm not originally from
+            Applachia, and I seldom return to it, but thanks to it I'm forever linked to the
+            unbridled spirit. A gypsy since birth and all heart by nature, I reside in the
+            Pacific Northwest calling Seattle home. When not appreciating the outdoors,
+            participating in extreme sports, or indulging in the finer things in life such
+            as fien dining, motorcycling, and pushing classic whips, I read and study
+            JavaScript, funk around with CSS, and train (hard). In 2011 I was on mark to
+            finish in the top 100 at the Spartan Invitational in Dallas, TX when an injury
+            caused me to be unable to complete the final obstacle.
+          </p>
+
+          <p>I built this entire project in React and Node and deployed to an ec2-instance
+            on AWS-Ubuntu. My educational background is design science and I'm a bit of a
+            tinkerer and I like making stuff that people think is cool. "From brainchild to
+            launch." I love CSS bugs and pattern libraries. in 2015 I took first place at
+            Seattle's largest hackathon with my team SpaceLabForever and I am always up for
+            new hackathon opporunties and remote work. Check me out on Github and CodePen
+            and StackOverflow and find me on IRC. Otherwise catch me outside, doin' it,
+            waxing poetic, beachcombing, island hopping, adventuring worldwide, across the
+            United States to Western Cape, the Patagonia, Andean Colombia, Oz, from Tokyo to
+            Hakuba. How bout dat?
           </p>
           <h3 className="shimmer">Current fitness:</h3>
           <ul>
@@ -66,7 +72,7 @@ class About extends Component {
             <li>AirBnb</li>
             <li>OfferUp</li>
             <li>Space</li>
-            <li>Poké</li>
+            <li>Umami</li>
             <li>CodePen</li>
             <li>GitHub</li>
             <li>StackOverflow</li>

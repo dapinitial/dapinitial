@@ -385,6 +385,8 @@ class About extends Component {
               </div>
             </div>
           </section>
+          <Footer class="line"/>
+
         </div>
       </div>
     )

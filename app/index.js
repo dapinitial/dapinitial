@@ -6,6 +6,6 @@ import App from './components/App/';
 
 render((
   <Router>
-    <App pokemon={winder.__PRELOADED_STATE__}/>
+    <App/>
   </Router>
 ), document.getElementById('root'));

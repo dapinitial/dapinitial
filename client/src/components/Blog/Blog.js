@@ -1,11 +1,23 @@
 import React, {Component} from 'react';
 import Subnav from '../Subnav/Subnav.js';
 import {Link} from 'react-router-dom';
+import Footer from '../Footer/Footer';
 
 class Blog extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {}
+  }
+
+  componentDidMount() {
+    let blog = document.getElementById('blog-dap');
+
+    blog.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+
   render() {
     return (
-      <div className="content flex">
+      <div id="blog-dap" className="content flex">
         <Subnav section='contact'/>
         <div className="left-column">
           <div className="fixed-column">
@@ -19,20 +31,17 @@ class Blog extends Component {
           </div>
         </div>
         <div className="right-column">
-          <div className="section-separator"></div>
-          <section id="about">
-            <div className="container">
+          <section id="about" className="line">
+            <div className="container line">
               <div className="section-title">
-                <div className="section-subtitle scrollable scrollable-between">
-                  <span>My Blog</span>
+                <div className="sect-subtitle skrollable skrollable-after">
+                  <span>Blog</span>
                 </div>
-                <h3>What's poppin</h3>
-
+                <h3>What's Poppin</h3>
                 <h2>My Blog</h2>
                 <div className="st-separator"></div>
               </div>
-              <div className="section-body">
-                <h4 className="text-subtitle">David Puerto</h4>
+              <div className="section-body line">
                 <h3 className="text-title">UI Designer
                   <span>&amp;</span>
                   Developer From Seattle, WA USA</h3>
@@ -67,6 +76,7 @@ class Blog extends Component {
               </div>
             </div>
           </section>
+          <Footer/>
         </div>
       </div>
     );

@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import helpers from '../../utils/helpers';
 import Subnav from '../Subnav/Subnav.js';
+import Footer from '../Footer/Footer.js';
+
+let backgroundImage = 'http://localhost:3000/images/phonebooth.jpg';
 
 const initialState = {
   name: "",
@@ -37,30 +40,50 @@ class Contact extends Component {
     });
   }
 
+  componentDidMount() {
+    let contact = document.getElementById('contact-dap');
+
+    contact.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+
   render() {
     return (
-      <div className='content'>
+      <div id="contact-dap" className="content flex">
         <Subnav section='contact'/>
-        <div>
-          <div className="section-separator"></div>
-          <section id="about">
+        <div className="left-column">
+          <div
+            className="fixed-column"
+            style={{
+            backgroundImage: `url(${backgroundImage})`
+          }}>
+            <div className="bg-wrapper">
+              <div className="bg bg-scroll"></div>
+              <div className="overlay"></div>
+              <div className="bg-title">
+                <span>Contact me</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="right-column">
+          <section id="sec1">
             <div className="container">
               <div className="section-title">
-                <div className="section-subtitle scrollable scrollable-between">
-                  <span>Contact me</span>
+                <div className="sect-subtitle skrollable skrollable-after">
+                  <span>Contacts</span>
                 </div>
-                <h3>Hollar at me</h3>
-
+                <h3>Let's rap</h3>
                 <h2>Contact me</h2>
-                <div class="st-separator"></div>
-                <h3 class="text-title">Let's Keep In Touch</h3>
-                <p>Sometimes it's more meaningful to receive an email or a postcard don't you
-                  think? Please, fill out the form below for esoteric updates from yours truly.
-                </p>
+                <div className="st-separator"></div>
               </div>
-              <div className="line">
+              <div className="section-body">
+                <h3 className="text-title">LET'S KEEP IN TOUCH</h3>
+                <p>
+                  Sometimes it's more meaningful to receive an email or a postcard don't you
+                  think? Please, fill out the form below for esoteric updates from yours truly.
+                  &#9786;
+                </p>
                 <div className='formContainer'>
-
                   <form id="contact-form" onSubmit={this.handleSubmit}>
                     <div className=''>
                       <input
@@ -71,7 +94,6 @@ class Contact extends Component {
                         placeholder="Your name"
                         className="validate"
                         required/>
-
                       <input
                         id="email"
                         type="email"
@@ -80,7 +102,6 @@ class Contact extends Component {
                         placeholder="Your email address"
                         className="validate"
                         required/>
-
                     </div>
                     <div className='formText'>
                       <textarea
@@ -93,17 +114,22 @@ class Contact extends Component {
                         required
                         rows="8"
                         cols="50"/>
-
                     </div>
                     <div className='submitButton'>
-                      <button type="submit" id="submit-message">Submit Message</button>
+                      <button type="submit" id="submit-message" className="btn hide-icon">
+                        <i className="fa fa-angle-right"></i>
+                        <span>Send Email</span>
+                      </button>
                     </div>
                   </form>
-
+                </div>
+                <div className="contact-info">
+                  <span>Give me a moment while I author a thoughtful reply.</span>
                 </div>
               </div>
             </div>
           </section>
+          <Footer className="line"/>
         </div>
       </div>
     );

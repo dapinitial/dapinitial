@@ -100,12 +100,14 @@ footer {
   color: #fff;
   position: relative;
   top: 45px;
-  font-size: 10px;
-  font-family: 'Helvetica', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
   text-transform: uppercase;
-  padding-left: 20px; }
+  padding-left: 20px;
+  letter-spacing: .84px; }
 
-.to-top-holder p:before, .to-top-holder p:after {
+.to-top-holder p:before,
+.to-top-holder p:after {
   content: '';
   position: absolute;
   top: -15px;

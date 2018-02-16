@@ -8,9 +8,21 @@ import Footer from '../Footer/Footer.js';
 let backgroundImage = 'http://localhost:3000/images/davidPuerto.jpg';
 
 class About extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {}
+  }
+
+  componentDidMount() {
+    let about = document.getElementById('about-dap');
+
+    about.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+
   render() {
     return (
-      <div className="content flex">
+      <div id="about-dap" className="content flex">
         <Subnav section='contact'/>
         <div className="left-column">
           <div

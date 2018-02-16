@@ -1,19 +1,18 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import './Footer.css';
 
 class Footer extends Component {
   render() {
     return (
-      <div>
-        <footer id="footer" className="dark-footer">
+      <div className="line">
+        <footer id="footer" className="dark-footer line">
           <div className='footerLayer'></div>
           <Link to='https://github.com/dapinitial' target='_blank'></Link>
-          <div className='copyright'>
+          <div className='copyright line'>
             <p>
-              <strong>"From Kentucky well-water to whale-watchin' off my back porch."</strong>
+              "From Kentucky well-water to whale-watchin' off my back porch."
               <br/>
-              Thank you for visiting
+              Thank you for visiting my React.js + Node.js application on an Ec2-instance.
             </p>
           </div>
         </footer>

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import './Welcome.css';
+import '../Welcome.css';
+import Home from '../Home/Home';
 import 'raf/polyfill';
-import Home from './Home';
 
 const welcome = "Sup";
 

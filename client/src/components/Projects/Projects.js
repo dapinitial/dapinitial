@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import './Projects.css';
-import Subnav from './Subnav.js';
+import Subnav from '../Subnav/Subnav.js';
 import {Link} from 'react-router-dom';
 
 class Projects extends Component {

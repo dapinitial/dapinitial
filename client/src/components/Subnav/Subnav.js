@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {Power4, TweenLite} from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
-import './Subnav.css';
 
 class Subnav extends Component {
   constructor() {
@@ -38,29 +37,21 @@ class Subnav extends Component {
       },
       ease: Power4.easeOut
     });
-  };
+  }
 
   render() {
     return (
       <div>
-        {/* <div className='sectionHeaderLayer'></div>
-        <div className='sectionHeaderContainer'>
-          <div className='sectionHeaderNavigation'>
-            <div className='sectionTitle'>
-              {this.props.section}
-            </div>
-          </div>
-        </div> */}
-        <Link
+        {/* <Link
           id="go-top"
           onClick={this.handleClick}
           to='/home'
           className={this.state.className}>
           <i className="fa fa-angle-up"></i>
-        </Link>
+        </Link> */}
       </div>
     );
-  }
+  };
 }
 
 export default Subnav;

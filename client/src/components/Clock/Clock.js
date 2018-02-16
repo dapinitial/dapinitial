@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './Clock.css';
 
 class Clock extends Component {
   constructor(props) {
@@ -9,9 +8,9 @@ class Clock extends Component {
       hours: 0,
       minutes: 0,
       seconds: 0,
-      deadline: 'February 8, 2018',
+      deadline: 'February 22, 2018',
       newDeadline: '',
-      countdownEvent: 'Japanuary ends:'
+      countdownEvent: 'Site launch:'
     };
   }
 
@@ -52,16 +51,20 @@ class Clock extends Component {
         <div className="Clock-title">{this.state.countdownEvent}</div>
         <br/>
         <div className="days">{this.leading0(this.state.days)}
-          <span>days</span>
+          <span>
+            &nbsp;days</span>
         </div>
         <div className="hours">{this.leading0(this.state.hours)}
-          <span>hours</span>
+          <span>
+            &nbsp;hours</span>
         </div>
         <div className="minutes">{this.leading0(this.state.minutes)}
-          <span>minutes</span>
+          <span>
+            &nbsp;minutes</span>
         </div>
         <div className="seconds">{this.leading0(this.state.seconds)}
-          <span>seconds</span>
+          <span>
+            &nbsp;seconds</span>
         </div>
       </div>
     )

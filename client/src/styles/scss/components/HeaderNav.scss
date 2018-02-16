@@ -170,8 +170,17 @@
 	position:absolute;
 	top:-10px;
 	left:-20px;
-	background:#292929;
-	width:2px;
+	background:rgba(0,0,0,.84);
+	width:1px;
+	height:100%;
+}
+.nav-button:after {
+	content:'';
+	position:absolute;
+	top:-10px;
+	left:-19px;
+	background:rgba(255,255,255,.064);
+	width:1px;
 	height:100%;
 }
 .nav-button span{

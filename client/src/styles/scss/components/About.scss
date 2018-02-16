@@ -29,13 +29,12 @@
 
 /*------ Fixed column-------------------------------------------------*/
 .fixed-column {
-	position: absolute;
+	position: fixed;
 	top:0;
 	left:0;
 	width:40%;
 	height:100%;
-	z-index:3;
-	opacity:0;
+	z-index: 1;
 	-webkit-transform: translate3d(0,0,0);
 }
 .fixed-column .overlay {

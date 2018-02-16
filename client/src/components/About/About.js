@@ -25,6 +25,39 @@ class About extends Component {
         </div>
         <div className="right-column">
           <section id="sec1">
+            <div className="scroll-nav-holder">
+              <nav className="scroll-nav">
+                <ul>
+                  <li>
+                    <Link
+                      to="index-video.html#sec1"
+                      data-bgscr="mages/bg/long/threeFingersLookout.jpg"
+                      data-bgtex="about"
+                      className="act-link scroll-link">
+                      <span>About</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="scroll-link"
+                      to="index-video.html#sec2"
+                      data-bgscr="images/bg/long/awesome.jpg"
+                      data-bgtex="resume">
+                      <span>Resume</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="scroll-link"
+                      to="index-video.html#sec3"
+                      data-bgscr="images/hackhousing.jpg"
+                      data-bgtex="awards">
+                      <span>Awards</span>
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
             <div className="container">
               <div className="section-title">
                 <div className="sect-subtitle skrollable skrollable-after">
@@ -36,7 +69,6 @@ class About extends Component {
                 <div className="st-separator"></div>
               </div>
               <div className="section-body">
-                <h4 className="text-subtitle">David Puerto</h4>
                 <h3 className="text-title">UI Designer
                   <span>&amp;</span>
                   Developer From Seattle, WA USA</h3>

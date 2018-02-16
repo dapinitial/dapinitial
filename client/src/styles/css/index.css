@@ -553,13 +553,12 @@ blockquote p {
 
 /*------ Fixed column-------------------------------------------------*/
 .fixed-column {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 40%;
   height: 100%;
-  z-index: 3;
-  opacity: 0;
+  z-index: 1;
   -webkit-transform: translate3d(0, 0, 0); }
 
 .fixed-column .overlay {
@@ -738,7 +737,8 @@ blockquote p {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0; }
+  left: 0;
+  z-index: 2; }
 
 .react-player {
   position: absolute;
@@ -1051,6 +1051,7 @@ blockquote p {
   width: 100%;
   line-height: 70px;
   background: #191919;
+  margin-bottom: 40px;
   position: relative;
   z-index: 6;
   top: 0; }
@@ -1063,13 +1064,19 @@ blockquote p {
   float: left; }
 
 .scroll-nav li a {
-  padding: 15px 24px;
   background: #292929;
   color: #fff;
-  position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 15px 24px;
+  position: relative; }
 
 .scroll-nav li a span {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: .5px;
   position: relative;
   z-index: 2; }
 

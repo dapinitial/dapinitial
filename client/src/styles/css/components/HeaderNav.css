@@ -97,6 +97,7 @@
   width: 100%;
   line-height: 70px;
   background: #191919;
+  margin-bottom: 40px;
   position: relative;
   z-index: 6;
   top: 0; }
@@ -113,7 +114,10 @@
   background: #292929;
   color: #fff;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased; }
 
 .scroll-nav li a span {
   position: relative;

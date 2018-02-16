@@ -5,7 +5,7 @@ import AboutNav from './AboutNav.js';
 import Subnav from '../Subnav/Subnav.js';
 import Footer from '../Footer/Footer.js';
 
-let backgroundImage = 'http://www.placehold.it/1200x1900';
+let backgroundImage = 'http://localhost:3000/images/davidPuerto.jpg';
 
 class About extends Component {
   render() {
@@ -13,7 +13,11 @@ class About extends Component {
       <div className="content flex">
         <Subnav section='contact'/>
         <div className="left-column">
-          <div className="fixed-column">
+          <div
+            className="fixed-column"
+            style={{
+            backgroundImage: `url(${backgroundImage})`
+          }}>
             <div className="bg-wrapper">
               <div className="bg bg-scroll"></div>
               <div className="overlay"></div>
@@ -31,27 +35,18 @@ class About extends Component {
                   <li>
                     <Link
                       to="index-video.html#sec1"
-                      data-bgscr="mages/bg/long/threeFingersLookout.jpg"
                       data-bgtex="about"
                       className="act-link scroll-link">
                       <span>About</span>
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      className="scroll-link"
-                      to="index-video.html#sec2"
-                      data-bgscr="images/bg/long/awesome.jpg"
-                      data-bgtex="resume">
+                    <Link className="scroll-link" to="index-video.html#sec2" data-bgtex="resume">
                       <span>Resume</span>
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      className="scroll-link"
-                      to="index-video.html#sec3"
-                      data-bgscr="images/hackhousing.jpg"
-                      data-bgtex="awards">
+                    <Link className="scroll-link" to="index-video.html#sec3" data-bgtex="awards">
                       <span>Awards</span>
                     </Link>
                   </li>
@@ -339,7 +334,8 @@ class About extends Component {
                         <div className="item">
                           <div className="testi-item">
                             <div className="testi-item-img">
-                              <img src="images/hackhousing.jpg" alt="" className="respimg"/></div>
+                              {/* <img src="images/hackhousing.jpg" alt="" className="respimg"/> */}
+                            </div>
                             <div className="testi-item-text">
                               <h3>Zillow #hackHousing - UW, Census.gov, Data.gov, Housing Bureau, and more</h3>
                               <p>

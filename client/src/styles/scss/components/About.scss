@@ -37,6 +37,10 @@
 	height:100%;
 	z-index: 1;
 	-webkit-transform: translate3d(0,0,0);
+	background-size: 150% 150%;
+	background-position-x: -100px;
+	background-position-y: 70px;
+	background-repeat: no-repeat;
 }
 .fixed-column .overlay {
 	opacity:0.3;

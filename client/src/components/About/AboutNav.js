@@ -4,23 +4,27 @@ import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 class AboutNav extends Component {
   render() {
     return (
-      <nav className='navContainer'>
-        <div className='sectionLinks'>
-          <Link onClick={this.handleClick} to='/about'>About</Link>
-        </div>
-        <div className='sectionLinks'>
-          <Link onClick={this.handleClick} to='/resume'>
-            Resume</Link>
-        </div>
-        <div className='sectionLinks'>
-          <Link onClick={this.handleClick} to='/awards'>
-            Awards</Link>
-        </div>
-        <div className='sectionLinks'>
-          <Link onClick={this.handleClick} to='/contact'>
-            Contact</Link>
-        </div>
-      </nav>
+      <div className="scroll-nav-holder">
+        <nav className="scroll-nav">
+          <ul>
+            <li>
+              <Link to="#sec1" data-bgtex="about" className="act-link scroll-link">
+                <span>About</span>
+              </Link>
+            </li>
+            <li>
+              <Link className="scroll-link" to="#sec2" data-bgtex="resume">
+                <span>Resume</span>
+              </Link>
+            </li>
+            <li>
+              <Link className="scroll-link" to="#sec3" data-bgtex="awards">
+                <span>Awards</span>
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     );
   }
 }

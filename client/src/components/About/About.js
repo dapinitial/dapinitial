@@ -41,30 +41,7 @@ class About extends Component {
         </div>
         <div className="right-column">
           <section id="sec1">
-            <div className="scroll-nav-holder">
-              <nav className="scroll-nav">
-                <ul>
-                  <li>
-                    <Link
-                      to="index-video.html#sec1"
-                      data-bgtex="about"
-                      className="act-link scroll-link">
-                      <span>About</span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="scroll-link" to="index-video.html#sec2" data-bgtex="resume">
-                      <span>Resume</span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="scroll-link" to="index-video.html#sec3" data-bgtex="awards">
-                      <span>Awards</span>
-                    </Link>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+            <AboutNav />
             <div className="container">
               <div className="section-title">
                 <div className="sect-subtitle skrollable skrollable-after">

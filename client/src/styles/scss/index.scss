@@ -31,19 +31,21 @@
  *	+ SECTIONS & PATTERNS FOR SMALL DISPLAY
  */
 
- @import 'reset';
- @import 'boilerplate';
- @import 'color';
- @import 'buttons';
- @import './components/About';
- @import './components/Contact';
- @import './components/Clock';
- @import './components/Home';
- @import './components/Header';
- @import './components/HeaderNav';
- @import './components/HeroTitle';
- @import './components/SectionTitle';
- @import './components/Footer';
+@import 'reset';
+@import 'boilerplate';
+@import 'color';
+@import 'buttons';
+@import './components/About';
+@import './components/Contact';
+@import './components/Blog';
+@import './components/Folio';
+@import './components/Clock';
+@import './components/Home';
+@import './components/Header';
+@import './components/HeaderNav';
+@import './components/HeroTitle';
+@import './components/SectionTitle';
+@import './components/Footer';
 
 /***********************************************************************************
 *	+ BUTTONS

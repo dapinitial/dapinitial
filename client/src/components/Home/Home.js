@@ -4,7 +4,7 @@ import ReactPlayer from 'react-player';
 // import Clock from '../Clock/Clock';
 import About from '../About/About.js';
 import Blog from '../Blog/Blog.js';
-import Projects from '../Projects/Projects.js';
+import Folio from '../Folio/Folio.js';
 import Contact from '../Contact/Contact.js';
 import HeroTitle from '../HeroTitle/HeroTitle.js';
 import '../../images/d.svg';
@@ -63,7 +63,7 @@ class Home extends Component {
             </div>
             <Route path='/about' component={About}/>
             <Route path='/blog' component={Blog}/>
-            <Route path='/projects' component={Projects}/>
+            <Route path='/folio' component={Folio}/>
             <Route path='/contact' component={Contact}/>
           </div>
         </div>

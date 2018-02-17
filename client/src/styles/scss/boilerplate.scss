@@ -293,12 +293,15 @@ $desktop-width: 769px;
         @extend %icon;
     }
     @else {
-         ::after {
+        &::after {
             @include fontSmoothing;
             color: #fff;
             cursor: pointer;
             display: inline-block;
-            font: normal normal normal 30rem/1 'Font Awesome\ 5 Free';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 1;
         }
     }
 }

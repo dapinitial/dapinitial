@@ -75,6 +75,9 @@
     font-family: 'Helvetica', sans-serif;
     padding: 10px;
     position: relative;
+    &:hover {
+        color: #FF4400;
+    }
 }
 
 .nav-inner nav li a,
@@ -96,14 +99,22 @@
     font-family: 'Helvetica', sans-serif;
     padding: 10px;
     position: relative;
-}
-
-.subnavicon {
-    @include icon;
-    &::after {
-        font: normal normal normal 30rem/1 'Font Awesome\ 5 Free';
-        content: '\f100';
-        margin-left: 8px;
+    transform: rotate(0deg);
+    transition: .187s linear all;
+    &:hover {
+        color: #FF4400;
+    }
+    &:hover .subnavicon::after {
+        color: #FF4400;
+        transform: rotate(-90deg);
+        transition: .187s linear all;
+    }
+    & .subnavicon {
+        @include icon;
+        &::after {
+            content: '\f100';
+            margin-left: 8px;
+        }
     }
 }
 
@@ -117,7 +128,7 @@
     line-height: 70px;
     background: #191919;
     margin-bottom: 40px;
-    position: relative;
+    position: fixed;
     z-index: 6;
     top: 0
 }

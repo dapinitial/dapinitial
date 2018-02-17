@@ -35,7 +35,7 @@ class Blog extends Component {
             <div className="container line">
               <div className="section-title">
                 <div className="sect-subtitle skrollable skrollable-after">
-                  <span>My Blog</span>
+                  <span>Blog</span>
                 </div>
                 <h3>1/19/2018</h3>
                 <h2>Japanuary</h2>

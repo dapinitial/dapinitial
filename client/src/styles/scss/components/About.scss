@@ -5,6 +5,10 @@
     flex-shrink: 0;
 }
 
+.right-column section:first-of-type {
+    padding-top: 66px;
+}
+
 .section-title {
     @include line;
     h2 {

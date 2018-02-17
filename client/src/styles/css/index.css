@@ -201,14 +201,17 @@ body {
   body::-webkit-scrollbar {
     display: none; }
 
-.subnavicon ::after {
+.nav-inner .subnav .subnavicon::after {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font: normal normal normal 30rem/1 'Font Awesome\ 5 Free'; }
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1; }
 
 canvas {
   position: absolute;
@@ -690,6 +693,9 @@ blockquote p {
   flex-basis: 40%;
   flex-grow: 0;
   flex-shrink: 0; }
+
+.right-column section:first-of-type {
+  padding-top: 66px; }
 
 .section-title h2 {
   padding: 20px; }
@@ -1382,6 +1388,8 @@ a[class^=projectLink] {
   font-family: 'Helvetica', sans-serif;
   padding: 10px;
   position: relative; }
+  .nav-inner nav li a:hover {
+    color: #FF4400; }
 
 .nav-inner nav li a,
 .nav-inner nav li:before,
@@ -1399,12 +1407,18 @@ a[class^=projectLink] {
   text-transform: uppercase;
   font-family: 'Helvetica', sans-serif;
   padding: 10px;
-  position: relative; }
-
-.subnavicon::after {
-  font: normal normal normal 30rem/1 'Font Awesome\ 5 Free';
-  content: '\f100';
-  margin-left: 8px; }
+  position: relative;
+  transform: rotate(0deg);
+  transition: .187s linear all; }
+  .nav-inner .subnav:hover {
+    color: #FF4400; }
+  .nav-inner .subnav:hover .subnavicon::after {
+    color: #FF4400;
+    transform: rotate(-90deg);
+    transition: .187s linear all; }
+  .nav-inner .subnav .subnavicon::after {
+    content: '\f100';
+    margin-left: 8px; }
 
 .nav-inner nav li.subnav:hover > ul {
   display: block; }
@@ -1415,7 +1429,7 @@ a[class^=projectLink] {
   line-height: 70px;
   background: #191919;
   margin-bottom: 40px;
-  position: relative;
+  position: fixed;
   z-index: 6;
   top: 0; }
 

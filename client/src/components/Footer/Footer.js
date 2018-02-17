@@ -1,7 +1,28 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import ScrollButton from './ScrollButton.js';
 
 class Footer extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      intervalId: 0
+    };
+  }
+
+  scrollStep() {
+    if (window.pageYOffset === 0) {
+      clearInterval(this.state.intervalId);
+    }
+    window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
+  }
+
+  scrollToTop() {
+    let intervalId = setInterval(this.scrollStep.bind(this), this.props.delayInMs);
+    this.setState({intervalId: intervalId});
+  }
+
   render() {
     return (
       <div>
@@ -82,9 +103,7 @@ class Footer extends Component {
                   &copy; davidpuerto.com 2018.
                 </span>
                 &nbsp; All rights reserved.</p>
-              <div className="to-top">
-                <i className="fa fa-angle-double-up"></i>
-              </div>
+              <ScrollButton scrollStepInPx="50" delayInMs="16.66"/>
             </div>
           </div>
         </footer>

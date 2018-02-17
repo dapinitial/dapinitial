@@ -41,7 +41,7 @@ class About extends Component {
         </div>
         <div className="right-column">
           <section id="sec1">
-            <AboutNav />
+            <AboutNav/>
             <div className="container">
               <div className="section-title">
                 <div className="sect-subtitle skrollable skrollable-after">
@@ -73,12 +73,13 @@ class About extends Component {
                   I like hackathons, the movie Hackers, getting shreddy, The Lost Boys, "the
                   Bristol sound," jumping out of airplanes, reconnecting, filling my passport with
                   stamps, board sports, different languages, making street art, praying in
-                  temples, running every city, working on my abs, the internet, pushing myself
-                  phyically, mountains, surf, good design, culinary and craft anything,
+                  temples, running every city, mycology, working on my abs, the internet, pushing
+                  myself phyically, mountains, surf, good design, culinary and craft anything,
                   battle-tested friendships, camaraderie, fighting the powers that be for what I
-                  believe in, people who suck at karaoke, muscle cars, german cars, italian bikes,
-                  road trips, thru hikes, awkard moments, wake up calls, morning people, happy
-                  people, Church people, laughing myself into tears, brunch, and being surprised.
+                  believe in, people who suck at karaoke but sing it anyways, urban farming,
+                  muscle cars, german cars, italian bikes, road trips, thru hikes, awkard moments,
+                  wake up calls, morning people, happy people, Church people, fire lookouts, the
+                  PNT, laughing myself into tears, brunch, and being surprised.
                 </p>
                 <Link to="/folio" className="btn hide-icon">
                   <i className="fa fa-angle-right"></i>

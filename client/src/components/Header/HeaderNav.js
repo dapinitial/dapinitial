@@ -5,9 +5,7 @@ class HeaderNav extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      reveal: false
-    };
+    this.state = {};
 
   }
 
@@ -31,12 +29,12 @@ class HeaderNav extends Component {
               <Link onClick={this.handleClick} to='/blog'>Blog</Link>
             </li>
             <li className="subnav">
-              <Link to="/folio">Folio<i className="fa fa-angle-double-down subnavicon"></i>
-              </Link>
+              <div>Folio<i className="fa fa-angle-double-down subnavicon"></i>
+              </div>
               <ul className="hidden">
                 <li>
-                  <Link to="/folio-facebook" className="custom-scroll-link">Facebook<i className="fa fa-angle-double-down subnavicon"></i>
-                  </Link>
+                  <div to="/folio-facebook" className="custom-scroll-link">Facebook<i className="fa fa-angle-double-down subnavicon"></i>
+                  </div>
                 </li>
                 <li>
                   <Link to="/folio-sonosite" className="custom-scroll-link">SonoSite<i className="fa fa-angle-double-down subnavicon"></i>
@@ -54,7 +52,7 @@ class HeaderNav extends Component {
           </ul>
         </nav>
       </div>
-    );
+    )
   }
 }
 

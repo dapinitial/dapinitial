@@ -6,7 +6,6 @@ import About from '../About/About.js';
 import Blog from '../Blog/Blog.js';
 import Projects from '../Projects/Projects.js';
 import Contact from '../Contact/Contact.js';
-import Header from '../Header/Header.js';
 import HeroTitle from '../HeroTitle/HeroTitle.js';
 import '../../images/d.svg';
 import {Power4, TweenLite} from "gsap";
@@ -38,7 +37,6 @@ class Home extends Component {
     return (
       <Router>
         <div className="wrapper">
-          <Header/>
           <div className='hero-wrapper'>
             <div className=''>
               <div className='full-section-container'>

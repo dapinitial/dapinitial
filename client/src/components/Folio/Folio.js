@@ -1,21 +1,16 @@
 import React, {Component} from 'react';
 import Subnav from '../Subnav/Subnav.js';
 import {Link} from 'react-router-dom';
-import Footer from '../Footer/Footer';
+import FolioPieceNav from './FolioPieceNav.js';
+import Footer from '../Footer/Footer.js';
 
-let backgroundImage = 'http://www.placehold.it/1400x1900';
-
-class Projects extends Component {
+class Folio extends Component {
   render() {
     return (
       <div id="folio-dap" className="content flex">
         <Subnav section='contact'/>
         <div className="left-column">
-          <div
-            className="fixed-column"
-            style={{
-            backgroundImage: `url(${backgroundImage})`
-          }}>
+          <div className="fixed-column">
             <div className="bg-wrapper">
               <div className="bg bg-scroll"></div>
               <div className="overlay"></div>
@@ -26,6 +21,7 @@ class Projects extends Component {
           </div>
         </div>
         <div className="right-column">
+          <FolioPieceNav/>
           <section id="sec1">
             <div className="container">
               <div className="section-title">
@@ -53,4 +49,4 @@ class Projects extends Component {
   }
 }
 
-export default Projects;
+export default Folio;

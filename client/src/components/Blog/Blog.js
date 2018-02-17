@@ -35,39 +35,27 @@ class Blog extends Component {
             <div className="container line">
               <div className="section-title">
                 <div className="sect-subtitle skrollable skrollable-after">
-                  <span>Blog</span>
+                  <span>My Blog</span>
                 </div>
-                <h3>What's Poppin</h3>
-                <h2>My Blog</h2>
+                <h3>1/19/2018</h3>
+                <h2>Japanuary</h2>
                 <div className="st-separator"></div>
               </div>
               <div className="section-body line">
-                <h3 className="text-title">UI Designer
-                  <span>&amp;</span>
-                  Developer From Seattle, WA USA</h3>
-                <p>
-                  With over a decade of browser-centric design and development experience, I've
-                  built my career upon a love for meaningful, high-impact, interactive media
-                  design. Let's be transparent here: I'm a Flash-refugee who was doing
-                  responsive-design and UX before the words were even coined. My sedulous approach
-                  to creating refined, yet innovative design systems involves visually
-                  synthesizing complex workflows into extensible pattern libraries expressing the
-                  underlying design language. What started out as a mastery of traditional screen
-                  design software became an obsession with the modern web development ecosystem. I
-                  pride myself as a seasoned, hands-on UX leader that delivers the highest-level
-                  of fit and finish to the products I love; &nbsp;
-                  <em>from brainchild to launch</em>.
+                <h3 className="text-title">No man, I don't eat pork</h3>
+                <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped
+                  to my shirt with my name printed on it? Do you see a little Asian child with a
+                  blank expression on his face sitting outside on a mechanical helicopter that
+                  shakes when you put quarters in it? No? Well, that's what you see at a toy
+                  store. And you must think you're in a toy store, because you're here shopping
+                  for an infant named Jeb.
                 </p>
-                <p>
-                  I like hackathons, the movie Hackers, getting shreddy, The Lost Boys, "the
-                  Bristol sound," jumping out of airplanes, reconnecting, filling my passport with
-                  stamps, board sports, different languages, making street art, praying in
-                  temples, running every city, working on my abs, the internet, pushing myself
-                  phyically, mountains, surf, good design, culinary and craft anything,
-                  battle-tested friendships, camaraderie, fighting the powers that be for what I
-                  believe in, people who suck at karaoke, muscle cars, german cars, italian bikes,
-                  road trips, thru hikes, awkard moments, wake up calls, morning people, happy
-                  people, Church people, laughing myself into tears, brunch, and being surprised.
+                <h3 className="text-title">Uuummmm, this is a tasty burger!</h3>
+                <p>Well, the way they make shows is, they make one show. That show's called a
+                  pilot. Then they show that show to the people who make shows, and on the
+                  strength of that one show they decide if they're going to make more shows. Some
+                  pilots get picked and become television programs. Some don't, become nothing.
+                  She starred in one of the ones that became nothing.
                 </p>
                 <Link to="/folio" className="btn hide-icon">
                   <i className="fa fa-angle-right"></i>

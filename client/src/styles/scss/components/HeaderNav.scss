@@ -1,6 +1,6 @@
 .nav-inner {
     background: rgba(0, 0, 0, .84);
-    font-family: 'Oswald';
+    font-family: 'Helvetica';
     font-weight: 500;
     letter-spacing: 1px;
     position: fixed;
@@ -72,7 +72,7 @@
     display: block;
     font-size: 24px;
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     padding: 10px;
     position: relative;
 }
@@ -88,31 +88,23 @@
     opacity: 1;
 }
 
-.nav-inner nav li.subnav a i.subnavicon {
-    position: absolute;
-    bottom: 17px;
-    z-index: 5;
-    color: #fff;
-    font-size: 12px;
-    margin-left: 6px;
-}
-
 .nav-inner .subnav {
     color: #fff;
     display: block;
     font-size: 24px;
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     padding: 10px;
     position: relative;
 }
 
-.nav-inner nav li.subnav:hover i.subnavicon {
-    transform: rotate(90deg);
-}
-
-.nav-inner nav li.subnav ul li a i.subnavicon {
-    display: none;
+.subnavicon {
+    @include icon;
+    &::after {
+        font: normal normal normal 30rem/1 'Font Awesome\ 5 Free';
+        content: '\f100';
+        margin-left: 8px;
+    }
 }
 
 .nav-inner nav li.subnav:hover>ul {

@@ -29,20 +29,17 @@ class HeaderNav extends Component {
               <Link onClick={this.handleClick} to='/blog'>Blog</Link>
             </li>
             <li className="subnav">
-              <div>Folio<i className="fa fa-angle-double-down subnavicon"></i>
+              <div className="subnavicon">Folio
               </div>
               <ul className="hidden">
                 <li>
-                  <div to="/folio-facebook" className="custom-scroll-link">Facebook<i className="fa fa-angle-double-down subnavicon"></i>
-                  </div>
+                  <Link to="/folio-facebook" className="custom-scroll-link">Facebook</Link>
                 </li>
                 <li>
-                  <Link to="/folio-sonosite" className="custom-scroll-link">SonoSite<i className="fa fa-angle-double-down subnavicon"></i>
-                  </Link>
+                  <Link to="/folio-sonosite" className="custom-scroll-link">SonoSite</Link>
                 </li>
                 <li>
-                  <Link to="/folio-zillow" className="custom-scroll-link">Zillow<i className="fa fa-angle-double-down subnavicon"></i>
-                  </Link>
+                  <Link to="/folio-zillow" className="custom-scroll-link">Zillow</Link>
                 </li>
               </ul>
             </li>

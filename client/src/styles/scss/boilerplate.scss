@@ -293,11 +293,13 @@ $desktop-width: 769px;
         @extend %icon;
     }
     @else {
-        @include fontSmoothing;
-        color: #fff;
-        cursor: pointer;
-        display: inline-block;
-        font: normal normal normal 30rem/1 'Material-Design-Iconic-Font';
+         ::after {
+            @include fontSmoothing;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            font: normal normal normal 30rem/1 'Font Awesome\ 5 Free';
+        }
     }
 }
 

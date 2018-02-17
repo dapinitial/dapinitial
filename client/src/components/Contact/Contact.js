@@ -79,8 +79,9 @@ class Contact extends Component {
               <div className="section-body">
                 <h3 className="text-title">LET'S KEEP IN TOUCH</h3>
                 <p>
-                  Sometimes it's more meaningful to receive an email or a postcard don't you
-                  think? Please, fill out the form below for esoteric updates from yours truly.
+                  You know that feeling when you receive a *real* letter or a postcard? That's
+                  what it's like for me when I get messages from this website. So, go ahead, don't
+                  be shy, fill out the form below and start the correspondance with yours truly.
                   &#9786;
                 </p>
                 <div className='formContainer'>

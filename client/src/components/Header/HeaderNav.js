@@ -41,6 +41,12 @@ class HeaderNav extends Component {
                 <li>
                   <Link to="/folio-zillow" className="custom-scroll-link">Zillow</Link>
                 </li>
+                <li>
+                  <Link to="/folio-starbucks" className="custom-scroll-link">Starbucks</Link>
+                </li>
+                <li>
+                  <Link to="/folio-webmd" className="custom-scroll-link">WebMD</Link>
+                </li>
               </ul>
             </li>
             <li>

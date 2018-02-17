@@ -3,6 +3,9 @@ import Subnav from '../Subnav/Subnav.js';
 import {Link} from 'react-router-dom';
 import Footer from '../Footer/Footer';
 
+let backgroundImage = 'https://img00.deviantart.net/b1ba/i/2009/237/d/d/white_stucco_wall_texture_2_by_' +
+    'fantasystock.jpg';
+
 class Blog extends Component {
   constructor(props) {
     super(props);
@@ -20,7 +23,11 @@ class Blog extends Component {
       <div id="blog-dap" className="content flex">
         <Subnav section='contact'/>
         <div className="left-column">
-          <div className="fixed-column">
+          <div
+            className="fixed-column"
+            style={{
+            backgroundImage: `url(${backgroundImage})`
+          }}>
             <div className="bg-wrapper">
               <div className="bg bg-scroll"></div>
               <div className="overlay"></div>
@@ -31,7 +38,7 @@ class Blog extends Component {
           </div>
         </div>
         <div className="right-column">
-          <section id="about" className="line">
+          <section id="about" className="line blog">
             <div className="container line">
               <div className="section-title">
                 <div className="sect-subtitle skrollable skrollable-after">

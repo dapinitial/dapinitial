@@ -5,7 +5,7 @@
     flex-shrink: 0;
 }
 
-.right-column section:first-of-type {
+.right-column section:first-of-type:not(.blog) {
     padding-top: 66px;
 }
 

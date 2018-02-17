@@ -694,7 +694,7 @@ blockquote p {
   flex-grow: 0;
   flex-shrink: 0; }
 
-.right-column section:first-of-type {
+.right-column section:first-of-type:not(.blog) {
   padding-top: 66px; }
 
 .section-title h2 {
@@ -1431,7 +1431,7 @@ a[class^=projectLink] {
   margin-bottom: 40px;
   position: fixed;
   z-index: 6;
-  top: 0; }
+  top: -1px; }
 
 .scroll-nav {
   float: left;

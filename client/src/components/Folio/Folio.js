@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Subnav from '../Subnav/Subnav.js';
 import {Link} from 'react-router-dom';
-import FolioPieceNav from './FolioPieceNav.js';
+import FolioNav from './FolioNav.js';
 import Footer from '../Footer/Footer.js';
 
 class Folio extends Component {
@@ -21,7 +21,7 @@ class Folio extends Component {
           </div>
         </div>
         <div className="right-column">
-          <FolioPieceNav/>
+          <FolioNav/>
           <section id="sec1">
             <div className="container">
               <div className="section-title">
@@ -33,11 +33,15 @@ class Folio extends Component {
                 <div className="st-separator"></div>
               </div>
               <div className="section-body">
-                <h3 className="text-title">It has been my honor</h3>
+                <h3 className="text-title">It has been an honor</h3>
                 <p>
-                  Sometimes it's more meaningful to receive an email or a postcard don't you
-                  think? Please, fill out the form below for esoteric updates from yours truly.
-                  &#9786;
+                  I would love to share my full portfolio with you. Interested parties: Please
+                  make a formal &nbsp;<Link to="/contact">inquiry</Link>&nbsp;
+and specify the type of samples or client you would like me to share. Also
+include who you represent and what the nature of your industry is. As to not
+potentially violate any NDA's with competitors, I screen requests. Conversely,
+the sheer breadth of my work that I am proud of has now become overwhelming...
+and that's a UX problem I choose to pass on solving for now! &#9786;
                 </p>
               </div>
             </div>

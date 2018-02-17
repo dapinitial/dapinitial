@@ -51,7 +51,7 @@ class Home extends Component {
                     loop/>
                 </div>
                 <div className='go-next-section'>
-                  <Link onClick={this.handleClick} to='/about#about'>
+                  <Link onClick={this.handleClick} to='/about'>
                     <i className='fa fa-angle-down'></i>
                     <i className='fa fa-angle-down'></i>
                     <i className='fa fa-angle-down'></i>

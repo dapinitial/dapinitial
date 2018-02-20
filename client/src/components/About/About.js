@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
-import AboutNav from './AboutNav.js';
-import Subnav from '../Subnav/Subnav.js';
+import AboutNav from './AboutNav';
+import Subnav from '../Subnav/Subnav';
+import Awards from './Awards'
 import Accordion from '../Accordion/Accordion';
-import Footer from '../Footer/Footer.js';
+import Footer from '../Footer/Footer';
 
 let backgroundImage = 'http://localhost:3000/images/davidPuerto.jpg';
 
@@ -21,9 +22,10 @@ const panels = [
     summary: 'Joined CONNECT platform team to identify pain points and rework their UI for adm' +
         'ins, physicians, clinicians, and patients. Converted Stylus to SCSS without intr' +
         'oducing breaking changes. Prototyped and worked alongside PMs and UX and Product' +
-        ' teams to ensure design fidelity and usability/accessibility before implementati' +
-        'on. Scoped the future of the product proposing a WYSIWYG editor experience for t' +
-        'he platform in lieu of a more archaic “service designer.” ',
+        ' teams to ensure design fidelity, responsiveness, and usability/accessibility be' +
+        'fore implementation on all UI components, including the App Shell, navigation, c' +
+        'ards, toast, modals, etc. Scoped the future of the product proposing a WYSIWYG e' +
+        'ditor experience for the platform in lieu of a more archaic “service designer.” ',
     links: [
       {
         url: '',
@@ -108,54 +110,53 @@ const panels = [
   // for an internal CRM from the ground' +       ' up alongside one other
   // engineer. Prototyped the tablet experience for account m' +       'anagement
   // and device management interfaces.VZW Engineering decided to reuse my H' +
-  //   'TML / CSS and allowed me to lead the effort to create a responsive,living
+  // 'TML / CSS and allowed me to lead the effort to create a responsive,living
   // patter' +       'n library. Single-handedly refactored client-side markup
   // from numerous silos thr' +       'oughout the organization including legacy
   // style sheets from internal and offshor' +       'e teams for Account
   // Management and Device Management. Removed dependency on Boot' +       'strap
-  // and took CSS code bloat down from over 500 kb to under 50 kb gzipped.Hand '
-  // +       '- combed through every bit of HTML / JSTL and removed excess markup
-  // reducing ove' +       'rall codebase by over 50 %.',   links: [     {
-  // url: '',       text: ''     }   ] }, {   icon: 'fa fa-briefcase',   dates:
+  // and took CSS code bloat down from over 500 kb to under 50 kb gzipped.Hand ' +
+  //       '- combed through every bit of HTML / JSTL and removed excess markup
+  // reducing ove' +       'rall codebase by over 50 %.',   links: [     { url:
+  // '',       text: ''     }   ] }, {   icon: 'fa fa-briefcase',   dates:
   // '2014-2015',   company: 'Sherwin Williams',   officeLocation: 'in Cleveland,
   // OH',   title: 'UX Designer',   skills: [     'UX Design', 'CSS', 'HTML',
   // 'jQuery', 'Design Integration'   ],   summary: 'Implemented a design language
   // based on OOCSS/SMACSS principles and removed the d' +       'ependency on
-  // third-party framework lessening code bloat by over 50%. Created and' +
-  // ' maintained UI pattern libraries and owned HTML/CSS standards across
+  // third-party framework lessening code bloat by over 50%. Created and' + '
+  // maintained UI pattern libraries and owned HTML/CSS standards across
   // platforms. ' +       'Used SCSS to encourage expedited workflows and
   // prototyping between engineering a' +       'nd design as well as provide
-  // cross-browser debugging.',   links: [     {       url: '',       text: ''
-  // }   ] }, {   icon: 'fa fa-briefcase',   dates: '2008-2010',   company:
+  // cross-browser debugging.',   links: [     {       url: '',       text: '' } ]
+  // }, {   icon: 'fa fa-briefcase',   dates: '2008-2010',   company:
   // 'Dealerskins',   officeLocation: 'in Nashville, TN',   title: 'Flash
   // Designer',   skills: [     'UX Design', 'CSS', 'HTML', 'jQuery', 'Design
   // Integration'   ],   summary: 'Delivered a full - Flash website every three
   // days serving as the presentation la' +       'yer over a custom CRM tool
-  // built in Flex.Designed visual mockups for NADA compet' +
-  // 'ition.Produced prototypes for future products.Redesigned the homepage and
-  // campai' +       'gned for a move away from Flash back towards traditional web
-  // technologies.Played' +       ' catcher on company kickball team.',   links: [
-  //     {       url: '',       text: ''     }   ] }, {   icon: 'fa fa-briefcase',
-  //   dates: '2004-2006',   company: 'The Center for Rural Development',
-  // officeLocation: 'in Somerset, KY',   title: 'Web Designer',   skills:
-  // ['Quintessential foot in the door'],   summary: 'Worked under the supervision
-  // of a seasoned designer supporting internal and exte' +       'rnal clients in
-  // the 42-county service area that this federal non-profit organiza' +
-  // 'tion -- the brainchild of Congressman Hal Rogers in Somerset, Kentucky. Our
-  // miss' +       'ion: Promote the arts and technologies throughout Appalachia
-  // to expose people to' +       ' the impact they can make across distributed
-  // learning and remote work in technol' +       'ogy, programming, and digital
-  // design. Federal non-profit and their affiliates, i' +       'ncluding
-  // internal and external clients of a 42-county service area in Southern a' +
-  //    'nd Eastern, Appalachian Kentucky through a myriad of web and graphic
-  // design init' +       'iatives promoting the arts, technology,
-  // entrepreneurship, leadership, youth deve' +       'lopment, personal
+  // built in Flex.Designed visual mockups for NADA compet' + 'ition.Produced
+  // prototypes for future products.Redesigned the homepage and campai' + 'gned
+  // for a move away from Flash back towards traditional web technologies.Played'
+  // +       ' catcher on company kickball team.',   links: [     {       url:
+  // '',       text: ''     }   ] }, {   icon: 'fa fa-briefcase',   dates:
+  // '2004-2006',   company: 'The Center for Rural Development', officeLocation:
+  // 'in Somerset, KY',   title: 'Web Designer', skills: ['Quintessential foot in
+  // the door'],   summary: 'Worked under the supervision of a seasoned designer
+  // supporting internal and exte' + 'rnal clients in the 42-county service area
+  // that this federal non-profit organiza' + 'tion -- the brainchild of
+  // Congressman Hal Rogers in Somerset, Kentucky. Our miss' +       'ion: Promote
+  // the arts and technologies throughout Appalachia to expose people to' + ' the
+  // impact they can make across distributed learning and remote work in technol'
+  // +       'ogy, programming, and digital design. Federal non-profit and their
+  // affiliates, i' +       'ncluding internal and external clients of a 42-county
+  // service area in Southern a' +    'nd Eastern, Appalachian Kentucky through a
+  // myriad of web and graphic design init' +       'iatives promoting the arts,
+  // technology, entrepreneurship, leadership, youth deve' + 'lopment, personal
   // accountability, environmental responsibility, and small busine' +       'ss
-  // development. Was able to establish a skateboarding park alongside baseball an'
-  // +       'd soccer fields working with young athletes and community leaders to
-  // provide a s' +       'afe haven for the skateboarders to avoid a city
-  // ordinance banning skateboarding.',   links: [     {       url: '',
-  // text: ''     }   ] }
+  // development. Was able to establish a skateboarding park alongside baseball
+  // an' +       'd soccer fields working with young athletes and community
+  // leaders to provide a s' +       'afe haven for the skateboarders to avoid a
+  // city ordinance banning skateboarding.',   links: [   {       url: '', text:
+  // ''   }   ] }
 ];
 
 class About extends Component {
@@ -267,16 +268,7 @@ class About extends Component {
           </section>
           <div className="section-separator"></div>
           <section id="sec3">
-            <div className="container">
-              <div className="section-title">
-                <div className="sect-subtitle skrollable skrollable-between">
-                  <span>Awards</span>
-                </div>
-                <h3>What I've Won</h3>
-                <h2>Awards</h2>
-                <div className="st-separator"></div>
-              </div>
-            </div>
+            <Awards/>
           </section>
           <Footer class="line"/>
 

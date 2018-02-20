@@ -679,6 +679,7 @@ $ratio: 1.618;
 }
 
 .content-holder {
+    @include line;
     vertical-align: top;
     position: absolute;
     left: 0;
@@ -690,6 +691,7 @@ $ratio: 1.618;
 }
 
 .content {
+    @include line;
     background: #fff;
     height: 100%;
     position: relative;
@@ -697,5 +699,6 @@ $ratio: 1.618;
 }
 
 .wrapper {
+    @include line;
     height: 100vh;
 }

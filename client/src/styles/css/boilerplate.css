@@ -4,7 +4,7 @@
 *:before {
   box-sizing: border-box; }
 
-.container:after {
+.container:after, .content-holder:after, .content:after, .wrapper:after {
   content: '';
   display: table;
   clear: both; }

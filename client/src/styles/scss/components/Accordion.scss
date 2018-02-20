@@ -108,9 +108,13 @@
         }
     }
     p {
-        font-size: 17px;
-        letter-spacing: -.23px;
-        line-height: 28px;
+        @include fontSmoothing;
+        color: #222;
+        font-family: 'Lato', sans-serif;
+        font-size: 19px;
+        line-height: 32px;
+        margin-bottom: 24px;
+        text-align: left;
     }
 }
 

@@ -1360,6 +1360,12 @@ a[class^=projectLink] {
   height: 70px;
   z-index: 9999;
   transform: translate3d(0, 0, 0); }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .header {
+      width: 100%; } }
+  @media (min-width: 0px) and (max-width: 320px) {
+    .header {
+      width: 100%; } }
 
 .logo-holder {
   background: #FF4400;
@@ -1500,6 +1506,12 @@ a[class^=projectLink] {
   transition: all 0.27s ease-in-out;
   transform: perspective(200px) rotateX(-15deg) scale(0.75);
   opacity: 0; }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .nav-inner {
+      width: 100%; } }
+  @media (min-width: 0px) and (max-width: 320px) {
+    .nav-inner {
+      width: 100%; } }
 
 .nav-inner:before {
   content: '';

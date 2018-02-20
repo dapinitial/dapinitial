@@ -7,6 +7,12 @@
     height: 70px;
     z-index: 9999;
     transform: translate3d(0, 0, 0);
+    @include tablet {
+        width: 100%;
+    }
+    @include mobile {
+        width: 100%;
+    }
 }
 
 .logo-holder {

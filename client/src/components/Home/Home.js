@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import ReactPlayer from 'react-player';
-// import Clock from '../Clock/Clock';
+// import Clock from '../Clock/Clock.js'; import Loader from
+// '../Loader/Loader.js';
 import About from '../About/About.js';
 import Blog from '../Blog/Blog.js';
 import Folio from '../Folio/Folio.js';
@@ -37,10 +38,12 @@ class Home extends Component {
     return (
       <Router>
         <div className="wrapper">
+          {/* <Loader/> */}
           <div className='hero-wrapper'>
             <div className=''>
               <div className='full-section-container'>
                 <div className='player-wrapper'>
+
                   <ReactPlayer
                     className="react-player"
                     width='100%'

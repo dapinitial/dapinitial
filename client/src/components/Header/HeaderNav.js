@@ -33,6 +33,9 @@ class HeaderNav extends Component {
               </div>
               <ul className="hidden">
                 <li>
+                  <Link to="/folio" className="custom-scroll-link">Check back often</Link>
+                </li>
+                {/* <li>
                   <Link to="/folio" className="custom-scroll-link">Facebook</Link>
                 </li>
                 <li>
@@ -46,7 +49,7 @@ class HeaderNav extends Component {
                 </li>
                 <li>
                   <Link to="/folio" className="custom-scroll-link">WebMD</Link>
-                </li>
+                </li> */}
               </ul>
             </li>
             <li>
@@ -54,7 +57,7 @@ class HeaderNav extends Component {
             </li>
           </ul>
         </nav>
-      </div>
+      </div >
     )
   }
 }

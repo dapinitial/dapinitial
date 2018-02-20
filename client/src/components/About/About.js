@@ -3,9 +3,160 @@ import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 import AboutNav from './AboutNav.js';
 import Subnav from '../Subnav/Subnav.js';
+import Accordion from '../Accordion/Accordion';
 import Footer from '../Footer/Footer.js';
 
 let backgroundImage = 'http://localhost:3000/images/davidPuerto.jpg';
+
+const panels = [
+  {
+    icon: 'fa fa-briefcase',
+    dates: '2017-Present',
+    company: 'WebMD Health Services',
+    officeLocation: 'in Seattle, WA',
+    title: 'Senior User Experience Design Engineer',
+    skills: [
+      'HTML', 'CSS', 'JavaScript (React)', 'Prototyping'
+    ],
+    summary: 'Joined CONNECT platform team to identify pain points and rework their UI for adm' +
+        'ins, physicians, clinicians, and patients. Converted Stylus to SCSS without intr' +
+        'oducing breaking changes. Prototyped and worked alongside PMs and UX and Product' +
+        ' teams to ensure design fidelity and usability/accessibility before implementati' +
+        'on. Scoped the future of the product proposing a WYSIWYG editor experience for t' +
+        'he platform in lieu of a more archaic “service designer.” ',
+    links: [
+      {
+        url: '',
+        text: ''
+      }
+    ]
+  }, {
+    icon: 'fa fa-briefcase',
+    dates: '2015-2016',
+    company: 'Starbucks Coffee Company',
+    officeLocation: 'in Seattle, WA',
+    title: 'Senior Product Designer',
+    skills: [
+      'Product Design', 'Design Integration', 'UX Design', 'Prototyping'
+    ],
+    summary: 'Designed transaction history for the web including prototypes for design. Tracke' +
+        'd legacy CSS bugs and resolved cross-browser IE9+ across all devices.  Removed d' +
+        'ependency on Bootstrap (retained grid system for layout). Prototyped ordering fr' +
+        'om the web using web technologies. Prototyped the future Starbucks web experienc' +
+        'e in React+Redux+Radium. Delivered UX prototypes of natural feeling interactions' +
+        ' and JS/CSS animations. Helped roll out a maintainable UI Pattern Library to be ' +
+        'shared across engineering teams supporting multiple platforms in React+SCSS. Des' +
+        'igned and developed Responsive Cards. Worked in distributed and cross-functional' +
+        ' teams of remote and on-site developers. Acted as principal liaison between desi' +
+        'gn and engineering during the rollout of Libra and the new Rewards program inclu' +
+        'ding handing off high-fidelity web prototypes ready for implementation. Built th' +
+        'e animated Star Gauge (pure CSS IE9+) that is present on the Starbucks.com Rewar' +
+        'ds site when engineering resources were low to ensure the highest level of fit a' +
+        'nd finish could be shared across native and mobile web experiences without addin' +
+        'g another SVG/JS dependency to the legacy Starbucks.com. Wireframes and visual d' +
+        'esign exploration with Sketch, OmniGraffle, and designed in the browser using Co' +
+        'dePen for rapid prototyping and sharing assets with engineers.  Assets managed w' +
+        'ith Zeplin.',
+    links: [
+      {
+        url: '',
+        text: ''
+      }
+    ]
+  }, {
+    icon: 'fa fa-briefcase',
+    dates: '2014-2015',
+    company: 'Facebook, Inc',
+    officeLocation: 'in Seattle, WA',
+    title: 'UI Designer',
+    skills: [
+      'Product Design', 'Visual Design', 'UX Research', 'Prototyping'
+    ],
+    summary: 'UX Research on the IDE experience, art direction, iconography, typography, style' +
+        ' guide, and UI implementation landing commits in HTML/CSS/SVG for the open sourc' +
+        'e projects `Lyric` and `Nuclide`. FBIDE was a well-known Facebook tool that was ' +
+        'highly visible, impacting a vast number of Facebook engineers prior to 2017.',
+    links: [
+      {
+        url: '',
+        text: ''
+      }
+    ]
+  }, {
+    icon: 'fa fa-briefcase',
+    dates: '2013-2013',
+    company: 'FujiFilm SonoSite',
+    officeLocation: 'in Seattle, WA',
+    title: 'UX Prototyper',
+    skills: [
+      'UX Research', 'Prototyping in the browser'
+    ],
+    summary: 'Alongside industrial designers prototyped a HIPPA-compliant hand-held ultrasound' +
+        ' device, akin to Star Trek’s tricorder using HTML/CSS3/JavaScript. UX Research a' +
+        'nd A/B testing of a one-handed wheel user interface design tested on a tablet.',
+    links: [
+      {
+        url: '',
+        text: ''
+      }
+    ]
+  }
+  // }, {   icon: 'fa fa-briefcase',   dates: '2012-2012',   company: 'Verizon
+  // Wireless',   officeLocation: 'in Atlanta, GA',   title: 'HTML Developer',
+  // skills: [     'HTML/CSS/JS', 'Presentation layer development', 'UX Design',
+  // 'Prototyping'   ],   summary: 'Delivered the needs-based presentation layer
+  // for an internal CRM from the ground' +       ' up alongside one other
+  // engineer. Prototyped the tablet experience for account m' +       'anagement
+  // and device management interfaces.VZW Engineering decided to reuse my H' +
+  //   'TML / CSS and allowed me to lead the effort to create a responsive,living
+  // patter' +       'n library. Single-handedly refactored client-side markup
+  // from numerous silos thr' +       'oughout the organization including legacy
+  // style sheets from internal and offshor' +       'e teams for Account
+  // Management and Device Management. Removed dependency on Boot' +       'strap
+  // and took CSS code bloat down from over 500 kb to under 50 kb gzipped.Hand '
+  // +       '- combed through every bit of HTML / JSTL and removed excess markup
+  // reducing ove' +       'rall codebase by over 50 %.',   links: [     {
+  // url: '',       text: ''     }   ] }, {   icon: 'fa fa-briefcase',   dates:
+  // '2014-2015',   company: 'Sherwin Williams',   officeLocation: 'in Cleveland,
+  // OH',   title: 'UX Designer',   skills: [     'UX Design', 'CSS', 'HTML',
+  // 'jQuery', 'Design Integration'   ],   summary: 'Implemented a design language
+  // based on OOCSS/SMACSS principles and removed the d' +       'ependency on
+  // third-party framework lessening code bloat by over 50%. Created and' +
+  // ' maintained UI pattern libraries and owned HTML/CSS standards across
+  // platforms. ' +       'Used SCSS to encourage expedited workflows and
+  // prototyping between engineering a' +       'nd design as well as provide
+  // cross-browser debugging.',   links: [     {       url: '',       text: ''
+  // }   ] }, {   icon: 'fa fa-briefcase',   dates: '2008-2010',   company:
+  // 'Dealerskins',   officeLocation: 'in Nashville, TN',   title: 'Flash
+  // Designer',   skills: [     'UX Design', 'CSS', 'HTML', 'jQuery', 'Design
+  // Integration'   ],   summary: 'Delivered a full - Flash website every three
+  // days serving as the presentation la' +       'yer over a custom CRM tool
+  // built in Flex.Designed visual mockups for NADA compet' +
+  // 'ition.Produced prototypes for future products.Redesigned the homepage and
+  // campai' +       'gned for a move away from Flash back towards traditional web
+  // technologies.Played' +       ' catcher on company kickball team.',   links: [
+  //     {       url: '',       text: ''     }   ] }, {   icon: 'fa fa-briefcase',
+  //   dates: '2004-2006',   company: 'The Center for Rural Development',
+  // officeLocation: 'in Somerset, KY',   title: 'Web Designer',   skills:
+  // ['Quintessential foot in the door'],   summary: 'Worked under the supervision
+  // of a seasoned designer supporting internal and exte' +       'rnal clients in
+  // the 42-county service area that this federal non-profit organiza' +
+  // 'tion -- the brainchild of Congressman Hal Rogers in Somerset, Kentucky. Our
+  // miss' +       'ion: Promote the arts and technologies throughout Appalachia
+  // to expose people to' +       ' the impact they can make across distributed
+  // learning and remote work in technol' +       'ogy, programming, and digital
+  // design. Federal non-profit and their affiliates, i' +       'ncluding
+  // internal and external clients of a 42-county service area in Southern a' +
+  //    'nd Eastern, Appalachian Kentucky through a myriad of web and graphic
+  // design init' +       'iatives promoting the arts, technology,
+  // entrepreneurship, leadership, youth deve' +       'lopment, personal
+  // accountability, environmental responsibility, and small busine' +       'ss
+  // development. Was able to establish a skateboarding park alongside baseball an'
+  // +       'd soccer fields working with young athletes and community leaders to
+  // provide a s' +       'afe haven for the skateboarders to avoid a city
+  // ordinance banning skateboarding.',   links: [     {       url: '',
+  // text: ''     }   ] }
+];
 
 class About extends Component {
 
@@ -23,7 +174,7 @@ class About extends Component {
   render() {
     return (
       <div id="about-dap" className="content flex">
-        <Subnav section='contact'/>
+        <Subnav section='about'/>
         <div className="left-column">
           <div
             className="fixed-column"
@@ -44,7 +195,7 @@ class About extends Component {
             <AboutNav/>
             <div className="container">
               <div className="section-title">
-                <div className="sect-subtitle skrollable skrollable-after">
+                <div className="sect-subtitle">
                   <span>About</span>
                 </div>
                 <h3>Who I am</h3>
@@ -54,7 +205,7 @@ class About extends Component {
               </div>
               <div className="section-body">
                 <h3 className="text-title">UI Designer
-                  <span>&amp;</span>
+                  <span>&nbsp;&amp;&nbsp;</span>
                   Developer From Seattle, WA USA</h3>
                 <p>
                   With over a decade of browser-centric design and development experience, I've
@@ -69,17 +220,25 @@ class About extends Component {
                   of fit and finish to the products I love; &nbsp;
                   <em>from brainchild to launch</em>.
                 </p>
+                <h3 className="text-title">Designer Statement
+                  <span>&nbsp;Aside</span>
+                </h3>
                 <p>
-                  I like hackathons, the movie Hackers, getting shreddy, The Lost Boys, "the
-                  Bristol sound," jumping out of airplanes, reconnecting, filling my passport with
-                  stamps, board sports, different languages, making street art, praying in
-                  temples, running every city, mycology, working on my abs, the internet, pushing
-                  myself phyically, mountains, surf, good design, culinary and craft anything,
-                  battle-tested friendships, camaraderie, fighting the powers that be for what I
-                  believe in, people who suck at karaoke but sing it anyways, urban farming,
-                  muscle cars, german cars, italian bikes, road trips, thru hikes, awkard moments,
-                  wake up calls, morning people, happy people, Church people, fire lookouts, the
-                  PNT, laughing myself into tears, brunch, and being surprised.
+                  I like hackathons, the movie Hackers, well-designed backpacking gear, getting
+                  shreddy in the PNW and abroad, The Lost Boys, "the Bristol sound," jumping out
+                  of airplanes, reconnecting with lost souls, filling my passport with stamps,
+                  board sports, different languages, making street art, praying in temples,
+                  falling in love with the&nbsp;
+                  <u>process</u>, running every city, Japan, mycology, working on my abs, the
+                  internet, pushing myself phyically, mountains, surf, good design, culinary and
+                  craft anything, battle-tested friendships, camaraderie, fighting the powers that
+                  be for what I believe in, people who suck at karaoke but sing it anyways, urban
+                  farming, muscle cars, german cars, italian bikes, motorcycles, motorcyles,
+                  motorcyles, las Caleras, high dives, cliff jumping, secret beaches, calderas,
+                  being naked in the rain with black tattoos, banya5, float tanks, SBP, road
+                  trips, thru hikes, awkard moments, wake up calls, morning people, happy people,
+                  Church people, fire lookouts, the PNT, laughing myself into tears, brunch, and
+                  being surprised.
                 </p>
                 <Link to="/folio" className="btn hide-icon">
                   <i className="fa fa-angle-right"></i>
@@ -92,7 +251,7 @@ class About extends Component {
           <section id="sec2">
             <div className="container">
               <div className="section-title">
-                <div className="sect-subtitle skrollable skrollable-after">
+                <div className="sect-subtitle">
                   <span>Resume</span>
                 </div>
                 <h3>What I've been doing
@@ -101,198 +260,9 @@ class About extends Component {
                 </h2>
                 <div className="st-separator"></div>
               </div>
-              <div className="clearfix"></div>
-              <div className="accordion" data-name="1">
-                <div className="accordion-title transition activeac">
-                  <h5>
-                    <a href="index-video.html#">
-                      <i className="fa fa-briefcase"></i>
-                      2014-2015
-                      <span>
-                        - Facebook, Seattle, Washington</span>
-                    </a>
-                  </h5>
-                </div>
-                <div className="accordion-inner">
-                  <h4>UI Designer</h4>
-                  <ul>
-                    <li>Product Design</li>
-                    <li>Visual Design</li>
-                    <li>UX Research &amp; Prototyping</li>
-                  </ul>
-                  <p>
-                    UX Research on the IDE experience, art direction, iconography, typography, style
-                    guide, and UI implementation landing commits in HTML/CSS/SVG for the open source
-                    projects `Lyric` and `Nuclide`. FBIDE was a well-known Facebook tool that was
-                    highly visible, impacting a vast number of Facebook engineers prior to 2017.
-                  </p>
-                </div>
-                <div className="accordion-title transition">
-                  <h5>
-                    <a href="index-video.html#">
-                      <i className="fa fa-briefcase"></i>
-                      2013 &amp; 2014
-                      <span>
-                        - Microsoft Xbox &amp; CFIT, Redmond, Washington</span>
-                    </a>
-                  </h5>
-                </div>
-                <div className="accordion-inner">
-                  <h4>Prototyper &amp; Design Integrator</h4>
-                  <ul>
-                    <li>HTML/CSS/jQuery</li>
-                    <li>Prototypes</li>
-                    <li>Design Integration</li>
-                  </ul>
-                  <p>
-                    Explored Xbox SmartGlass 2.0's touch-based user experience providing high-
-                    fidelity prototypes via web technologies maintaining a single codebase for
-                    cross-platform testing. Prototyped and implemented designs for HRWeb with
-                    ARIA-tags for inclusion. Prototyped a filtering system to locate and communicate
-                    with employees who had bandwidth and expertise based on #hashtag filters that
-                    were in place on Dr. Who, the interactive org chart.
-                  </p>
-                </div>
-                <div className="accordion-title transition">
-                  <h5>
-                    <a href="index-video.html#">
-                      <i className="fa fa-briefcase"></i>
-                      2013
-                      <span>
-                        - FujiFilm SonoSite, Bothell, Washington</span>
-                    </a>
-                  </h5>
-                </div>
-                <div className="accordion-inner">
-                  <h4>Prototyper &amp; Design Integrator</h4>
-                  <ul>
-                    <li>HTML/CSS/jQuery</li>
-                    <li>Prototypes</li>
-                    <li>A/B Testing in UX Lab</li>
-                  </ul>
-                  <p>
-                    Prototyped a handheld ultrasound device for military and medical professionals.
-                    Think of it as something along the lines of Star Trek's Tricorder.
-                  </p>
-                </div>
-                <div className="accordion-title transition">
-                  <h5>
-                    <a href="index-video.html#">
-                      <i className="fa fa-briefcase"></i>
-                      2012
-                      <span>
-                        - Verizon-Wireless, Atlanta, Georgia</span>
-                    </a>
-                  </h5>
-                </div>
-                <div className="accordion-inner">
-                  <h4>Prototyper &amp; Design Integrator</h4>
-                  <ul>
-                    <li>HTML/CSS/jQuery</li>
-                    <li>Prototypes</li>
-                    <li>Presentation Layer Development</li>
-                  </ul>
-                  <p>
-                    Delivered the needs’-based presentation layer for an internal ad CRM from the
-                    ground up alongside a software engineer. Prototyped the tablet experience for
-                    VZW's account management and device management interfaces. Reused my HTML/CSS to
-                    create a responsive, living pattern library while single-handedly refactoring
-                    the client-side markup and style sheets from offshore teams.
-                  </p>
-                </div>
-                <div className="accordion-title transition">
-                  <h5>
-                    <a href="index-video.html#">
-                      <i className="fa fa-briefcase"></i>
-                      2011
-                      <span>
-                        - Sherwin-Williams, Cleveland, Ohio</span>
-                    </a>
-                  </h5>
-                </div>
-                <div className="accordion-inner">
-                  <h4>Prototyper &amp; Design Integrator</h4>
-                  <ul>
-                    <li>HTML/CSS/jQuery</li>
-                    <li>Presentation Layer Development</li>
-                  </ul>
-                  <p>
-                    Created a responsive, living pattern library for front-end developers using
-                    HTML5/CSS3 adhering to SMACSS and OOCSS principles that would display perfectly,
-                    device-agnostic, across any browser. Served as a liaison between outside
-                    agencies and Sherwin-Williams.
-                  </p>
-                </div>
-                <div className="accordion-title transition">
-                  <h5>
-                    <a href="index-video.html#">
-                      <i className="fa fa-briefcase"></i>
-                      2008-2010
-                      <span>
-                        - Dealerskins, Nashville, Tennessee</span>
-                    </a>
-                  </h5>
-                </div>
-                <div className="accordion-inner">
-                  <h4>Flash Designer</h4>
-                  <p>
-                    Delivered a full-Flash website every three days serving as the presentation
-                    layer over a custom CRM tool built in Flex. Designed visual mockups for NADA
-                    competition. Produced prototypes for future products. Redesigned the company's
-                    homepage and campaigned for a move away from Flash back towards traditional web
-                    technologies. Played catcher on company kickball team.
-                  </p>
-                </div>
-                <div className="accordion-title transition">
-                  <h5>
-                    <a href="index-video.html#">
-                      <i className="fa fa-briefcase"></i>
-                      2004-2007
-                      <span>
-                        - The Center for Rural Development, Somerset, Kentucky</span>
-                    </a>
-                  </h5>
-                </div>
-                <div className="accordion-inner">
-                  <h4>Web Designer</h4>
-                  <p>
-                    Quintessential "foot in the door"
-                  </p>
-                  <p>
-                    Worked under the supervision of a seasoned designer supporting internal and
-                    external clients in the 42-county service area that this federal non-profit
-                    organization -- the brainchild of Congressman Hal Rogers in Somerset, Kentucky.
-                    Our mission: Promote the arts and technologies throughout Appalachia to expose
-                    people to the impact they can make across distributed learning and remote work
-                    in technology, programming, and digital design. Federal non-profit and their
-                    affiliates, including internal and external clients of a 42-county service area
-                    in Southern and Eastern, Appalachian Kentucky through a myriad of web and
-                    graphic design initiatives promoting the arts, technology, entrepreneurship,
-                    leadership, youth development, personal accountability, environmental
-                    responsibility, and small business development. Was able to establish a
-                    skateboarding park alongside baseball and soccer fields working with young
-                    athletes and community leaders to provide a safe haven for the skateboarders to
-                    avoid a city ordinance banning skateboarding.
-                  </p>
-                </div>
-                <div className="accordion-title transition">
-                  <h5>
-                    <a href="index-video.html#">
-                      <i className="fa fa-graduation-cap"></i>
-                      2004-2007
-                      <span>
-                        - The Art Institute of Atlanta &amp; Online
-                      </span>
-                    </a>
-                  </h5>
-                </div>
-                <div className="accordion-inner">
-                  <h4>Graduated with a Bachelor's of Sciences in Interactive Media Design</h4>
-                  <p>
-                    Awarded Best of Show 2007 at Portfolio Review
-                  </p>
-                </div>
-              </div>
+
+              <Accordion panels={panels}/>
+
             </div>
           </section>
           <div className="section-separator"></div>
@@ -305,73 +275,6 @@ class About extends Component {
                 <h3>What I've Won</h3>
                 <h2>Awards</h2>
                 <div className="st-separator"></div>
-              </div>
-              <div className="single-slider-holder">
-                <div className="customNavigation">
-                  <a className="next-slide transition">
-                    <i className="fa fa-angle-right"></i>
-                  </a>
-                  <a className="prev-slide transition">
-                    <i className="fa fa-angle-left"></i>
-                  </a>
-                </div>
-                <div
-                  className="single-slider owl-carousel testimonials-slider owl-theme owl-loaded">
-
-                  <div className="owl-stage-outer owl-height">
-                    <div className="owl-stage">
-                      <div className="owl-item active">
-                        <div className="item">
-                          <div className="testi-item">
-                            <div className="testi-item-img">
-                              {/* <img src="images/hackhousing.jpg" alt="" className="respimg"/> */}
-                            </div>
-                            <div className="testi-item-text">
-                              <h3>Zillow #hackHousing - UW, Census.gov, Data.gov, Housing Bureau, and more</h3>
-                              <p>
-                                Hacking the housing market: Tech teams use open data to help people find
-                                affordable homes.</p>
-                              <p>This special series focuses on important community issues, innovative
-                                solutions to societal challenges, and people and non-profit groups making an
-                                impact through technology.</p>
-                              <a
-                                href="http://www.geekwire.com/2015/hacking-housing-market-tech-teams-use-open-data-help-people-find-affordable-homes/"
-                                target="_blank">Via GeekWire</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="owl-item">
-                        <div className="item">
-                          <div className="testi-item">
-                            <div className="testi-item-img"></div>
-                            <div className="testi-item-text">
-                              <h3>Best of Show 2007</h3>
-                              <p>
-                                Representing the Art Institute of Atlanta and Online Divisions I took home the
-                                top award from my design college at the Portfolio Review for Interactive Media
-                                Design Bachelor's graduates.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="owl-controls">
-                    <div className="owl-nav">
-                      <div className="owl-prev">prev</div>
-                      <div className="owl-next">next</div>
-                    </div>
-                    <div className="owl-dots">
-                      <div className="owl-dot active">
-                        <span></span>
-                      </div>
-                      <div className="owl-dot">
-                        <span></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </section>

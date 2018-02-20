@@ -4,18 +4,24 @@ import {Link} from 'react-router-dom';
 import FolioNav from './FolioNav.js';
 import Footer from '../Footer/Footer.js';
 
+let backgroundImage = 'http://localhost:3000/images/whiteboard.jpg';
+
 class Folio extends Component {
   render() {
     return (
       <div id="folio-dap" className="content flex">
-        <Subnav section='contact'/>
+        <Subnav section='folio'/>
         <div className="left-column">
-          <div className="fixed-column">
+          <div
+            className="fixed-column"
+            style={{
+            backgroundImage: `url(${backgroundImage})`
+          }}>
             <div className="bg-wrapper">
               <div className="bg bg-scroll"></div>
               <div className="overlay"></div>
               <div className="bg-title">
-                <span>My Folio</span>
+                <span>my folio</span>
               </div>
             </div>
           </div>

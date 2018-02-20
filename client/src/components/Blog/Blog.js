@@ -3,8 +3,7 @@ import Subnav from '../Subnav/Subnav.js';
 import {Link} from 'react-router-dom';
 import Footer from '../Footer/Footer';
 
-let backgroundImage = 'https://img00.deviantart.net/b1ba/i/2009/237/d/d/white_stucco_wall_texture_2_by_' +
-    'fantasystock.jpg';
+let backgroundImage = 'http://localhost:3000/images/japanuary.jpg';
 
 class Blog extends Component {
   constructor(props) {
@@ -21,7 +20,7 @@ class Blog extends Component {
   render() {
     return (
       <div id="blog-dap" className="content flex">
-        <Subnav section='contact'/>
+        <Subnav section='blog'/>
         <div className="left-column">
           <div
             className="fixed-column"
@@ -32,7 +31,7 @@ class Blog extends Component {
               <div className="bg bg-scroll"></div>
               <div className="overlay"></div>
               <div className="bg-title">
-                <span>blog</span>
+                <span>my folio</span>
               </div>
             </div>
           </div>

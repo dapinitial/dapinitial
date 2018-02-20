@@ -10,7 +10,7 @@
     height: 100%;
     z-index: 9;
     visibility: hidden;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.27s ease-in-out;
     transform: perspective(200px) rotateX(-15deg) scale(0.75);
     opacity: 0;
 }
@@ -25,10 +25,19 @@
     z-index: 2;
     opacity: 0.3;
     transform: rotate(-45deg);
+    transition: all 0.27s ease-in-out;
 }
 
-.nav-inner.menhov:before {
+.nav-inner.vismen:before {
     transform: rotate(45deg);
+    transition: transform 0.27s ease-in-out;
+}
+
+.nav-inner:hover {
+    &.vismen:before {
+        transform: rotate(-45deg);
+        transition: transform 0.27s ease-in-out;
+    }
 }
 
 .vismen {

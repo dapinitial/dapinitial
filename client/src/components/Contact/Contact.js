@@ -125,7 +125,7 @@ class Contact extends Component {
                   </form>
                 </div>
                 <div className="contact-info">
-                  <span>Give me a moment while I author a thoughtful reply.</span>
+                  <span>Give me a moment while I respond thoughtfully.</span>
                 </div>
               </div>
             </div>

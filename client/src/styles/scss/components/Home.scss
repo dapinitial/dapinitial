@@ -27,6 +27,9 @@
     right: 0;
     overflow: hidden;
     transform: scale(1.5);
+    @include mobile {
+        display: none;
+    }
 }
 
 .nameLink {

@@ -1291,6 +1291,9 @@ a[class^=projectLink] {
   right: 0;
   overflow: hidden;
   transform: scale(1.5); }
+  @media (min-width: 0px) and (max-width: 320px) {
+    .react-player {
+      display: none; } }
 
 .nameLink {
   display: block;
@@ -1798,6 +1801,12 @@ a[class^=projectLink] {
   transform: translate(-50%, -50%);
   width: 100%;
   z-index: 2; }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .hero-title {
+      padding-left: 0; } }
+  @media (min-width: 0px) and (max-width: 320px) {
+    .hero-title {
+      padding-left: 0; } }
 
 .hero-title h3 {
   -webkit-font-smoothing: antialiased;
@@ -1816,6 +1825,10 @@ a[class^=projectLink] {
   margin-bottom: 10px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65);
   text-transform: uppercase; }
+  @media (min-width: 0px) and (max-width: 320px) {
+    .hero-title h3 {
+      font-size: 64px;
+      line-height: 60px; } }
 
 .hero-title h4 {
   float: left;
@@ -1827,6 +1840,10 @@ a[class^=projectLink] {
   line-height: 36px;
   position: relative;
   margin-bottom: 20px; }
+  @media (min-width: 0px) and (max-width: 320px) {
+    .hero-title h4 {
+      font-size: 20px;
+      line-height: 24px; } }
 
 .hero-wrap {
   float: left;

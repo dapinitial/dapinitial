@@ -261,14 +261,16 @@ class About extends Component {
                 </h2>
                 <div className="st-separator"></div>
               </div>
-
-              <Accordion panels={panels}/>
-
+              <div className="section-body">
+                <Accordion panels={panels}/>
+              </div>
             </div>
           </section>
           <div className="section-separator"></div>
           <section id="sec3">
-            <Awards/>
+            <div className="section-body">
+              <Awards/>
+            </div>
           </section>
           <Footer class="line"/>
 

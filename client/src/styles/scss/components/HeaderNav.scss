@@ -10,6 +10,7 @@
     height: 100%;
     z-index: 9;
     visibility: hidden;
+    text-align: center;
     transition: all 0.27s ease-in-out;
     transform: perspective(200px) rotateX(-15deg) scale(0.75);
     opacity: 0;

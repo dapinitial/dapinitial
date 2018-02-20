@@ -47,8 +47,7 @@ class Panel extends Component {
         <button className='panel__label' role='tab' onClick={activateTab}>
           <i className={icon}></i>
           <span className="dates">{dates}</span>&nbsp;
-          <span className="company">{company}</span>&nbsp;
-          <span className="officeLocation">{officeLocation}</span>
+          <span className="company">{company}</span>&nbsp; {/* <span className="officeLocation">{officeLocation}</span> */}
         </button>
         <div className='panel__inner' style={innerStyle} aria-hidden={!isActive}>
           <div className='panel__content'>

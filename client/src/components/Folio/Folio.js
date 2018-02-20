@@ -7,6 +7,11 @@ import Footer from '../Footer/Footer.js';
 let backgroundImage = 'http://localhost:3000/images/whiteboard.jpg';
 
 class Folio extends Component {
+  componentDidMount() {
+    let about = document.getElementById('folio-dap');
+
+    about.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
   render() {
     return (
       <div id="folio-dap" className="content flex">

@@ -102,6 +102,37 @@ const panels = [
         text: ''
       }
     ]
+  }, {
+    icon: 'fa fa-graduation-cap',
+    dates: '2017-2017',
+    company: 'CodeFellows 101-401',
+    officeLocation: 'in Seattle, WA',
+    title: 'JavaScript Certificate',
+    skills: [''],
+    summary: 'Met some cool people, networked, worked on the whiteboard, algorithms, and made ' +
+        'some cool stuff with some people who I admire.',
+    links: [
+      {
+        url: '',
+        text: ''
+      }
+    ]
+  }, {
+    icon: 'fa fa-graduation-cap',
+    dates: '2004-2007',
+    company: 'The Art Institute of Atlanta & Online',
+    officeLocation: '',
+    title: 'Bachelor of Science',
+    skills: [
+      'Interactive Media Design', 'Focus on Flash ActionScript 2.0'
+    ],
+    summary: 'I earned my B.S. degree',
+    links: [
+      {
+        url: '',
+        text: ''
+      }
+    ]
   }
   // }, {   icon: 'fa fa-briefcase',   dates: '2012-2012',   company: 'Verizon
   // Wireless',   officeLocation: 'in Atlanta, GA',   title: 'HTML Developer',
@@ -115,8 +146,8 @@ const panels = [
   // from numerous silos thr' +       'oughout the organization including legacy
   // style sheets from internal and offshor' +       'e teams for Account
   // Management and Device Management. Removed dependency on Boot' +       'strap
-  // and took CSS code bloat down from over 500 kb to under 50 kb gzipped.Hand ' +
-  //       '- combed through every bit of HTML / JSTL and removed excess markup
+  // and took CSS code bloat down from over 500 kb to under 50 kb gzipped.Hand '
+  // +       '- combed through every bit of HTML / JSTL and removed excess markup
   // reducing ove' +       'rall codebase by over 50 %.',   links: [     { url:
   // '',       text: ''     }   ] }, {   icon: 'fa fa-briefcase',   dates:
   // '2014-2015',   company: 'Sherwin Williams',   officeLocation: 'in Cleveland,
@@ -136,8 +167,8 @@ const panels = [
   // built in Flex.Designed visual mockups for NADA compet' + 'ition.Produced
   // prototypes for future products.Redesigned the homepage and campai' + 'gned
   // for a move away from Flash back towards traditional web technologies.Played'
-  // +       ' catcher on company kickball team.',   links: [     {       url:
-  // '',       text: ''     }   ] }, {   icon: 'fa fa-briefcase',   dates:
+  // +       ' catcher on company kickball team.',   links: [     {       url: '',
+  //       text: ''     }   ] }, {   icon: 'fa fa-briefcase',   dates:
   // '2004-2006',   company: 'The Center for Rural Development', officeLocation:
   // 'in Somerset, KY',   title: 'Web Designer', skills: ['Quintessential foot in
   // the door'],   summary: 'Worked under the supervision of a seasoned designer
@@ -225,21 +256,23 @@ class About extends Component {
                   <span>&nbsp;Aside</span>
                 </h3>
                 <p>
-                  I like hackathons, the movie Hackers, well-designed backpacking gear, getting
-                  shreddy in the PNW and abroad, The Lost Boys, "the Bristol sound," jumping out
-                  of airplanes, reconnecting with lost souls, filling my passport with stamps,
-                  board sports, different languages, making street art, praying in temples,
-                  falling in love with the&nbsp;
-                  <u>process</u>, running every city, Japan, mycology, working on my abs, the
-                  internet, pushing myself phyically, mountains, surf, good design, culinary and
-                  craft anything, battle-tested friendships, camaraderie, fighting the powers that
-                  be for what I believe in, people who suck at karaoke but sing it anyways, urban
-                  farming, muscle cars, german cars, italian bikes, motorcycles, motorcyles,
-                  motorcyles, las Caleras, high dives, cliff jumping, secret beaches, calderas,
-                  being naked in the rain with black tattoos, banya5, float tanks, SBP, road
-                  trips, thru hikes, awkard moments, wake up calls, morning people, happy people,
-                  Church people, fire lookouts, the PNT, laughing myself into tears, brunch, and
-                  being surprised.
+                  I like hackathons, PWAs, SPAs, the movie Hackers, well-designed backpacking
+                  gear, getting shreddy in the PNW and abroad, The Lost Boys, "the Bristol sound,"
+                  jumping out of airplanes, reconnecting with lost souls, filling my passport with
+                  stamps, board sports, different languages, making street art, praying in
+                  temples, falling in love with the&nbsp;
+                  <u>process</u>, running every city in Brooks & Mizunos, Sea to Summit, Mountain
+                  Hardwear, Salomon, Japan, Flow bindings, RIDE Kink, BOA boots, mycology, working
+                  on my abs, the internet, pushing myself phyically, mountains, surf, good design,
+                  culinary and craft anything, battle-tested friendships, camaraderie, fighting
+                  the powers that be for what I believe in, people who suck at karaoke but sing it
+                  anyways, urban farming, muscle cars, onsens, German cars, Italian bikes,
+                  motorcycles, motorcyles, motorcyles, that QuatD ExBox Exhaust on the S2R Ducati,
+                  las Caleras, cookies, high dives, cliff jumping, secret beaches, calderas, being
+                  naked in the rain with black tattoos, banya5, float tanks, SBP, road trips, thru
+                  hikes, awkard moments, wake up calls, morning people, happy people, Church
+                  people, fire lookouts, the PNT, laughing myself into tears, brunch, and being
+                  surprised.
                 </p>
                 <Link to="/folio" className="btn hide-icon">
                   <i className="fa fa-angle-right"></i>
@@ -257,7 +290,7 @@ class About extends Component {
                 </div>
                 <h3>What I've been doing
                 </h3>
-                <h2>Resume
+                <h2>Partial Resume
                 </h2>
                 <div className="st-separator"></div>
               </div>

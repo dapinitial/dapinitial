@@ -31,7 +31,7 @@ class Blog extends Component {
               <div className="bg bg-scroll"></div>
               <div className="overlay"></div>
               <div className="bg-title">
-                <span>my folio</span>
+                <span>my blog</span>
               </div>
             </div>
           </div>

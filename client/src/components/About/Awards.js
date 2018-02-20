@@ -33,7 +33,7 @@ class Awards extends Component {
               <span>Awards</span>
             </div>
             <h3>What I've Won</h3>
-            <h2>Awards</h2>
+            <h2>Awards &amp; Publicity</h2>
             <div className="st-separator"></div>
           </div>
 

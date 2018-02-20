@@ -147,6 +147,14 @@
     position: fixed;
     z-index: 6;
     top: -1px;
+    @include tablet {
+        left: 0;
+        top: 70px;
+    }
+    @include mobile {
+        left: 0;
+        top: 70px;
+    }
 }
 
 .scroll-nav {

@@ -3,10 +3,27 @@
     flex-basis: 40%;
     flex-grow: 0;
     flex-shrink: 0;
+    @include tablet {
+        display: none;
+    }
+    @include mobile {
+        display: none;
+    }
 }
 
 .right-column section:first-of-type:not(.blog) {
     padding-top: 66px;
+}
+
+#about-dap {
+    .container {
+        @include tablet {
+            padding: 100px 20px 0px 20px;
+        }
+        @include mobile {
+            padding: 100px 20px 0px 20px;
+        }
+    }
 }
 
 .section-title {

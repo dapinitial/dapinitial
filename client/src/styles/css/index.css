@@ -712,9 +712,6 @@ blockquote p {
     .left-column {
       display: none; } }
 
-.right-column section:first-of-type:not(.blog) {
-  padding-top: 66px; }
-
 @media (min-width: 320px) and (max-width: 768px) {
   #about-dap .container {
     padding: 100px 20px 0px 20px; } }
@@ -722,6 +719,9 @@ blockquote p {
 @media (min-width: 0px) and (max-width: 320px) {
   #about-dap .container {
     padding: 100px 20px 0px 20px; } }
+
+#about-dap .about {
+  padding-top: 66px; }
 
 .section-title h2 {
   padding: 20px; }
@@ -1087,6 +1087,9 @@ input[type=email]:focus {
 @media (min-width: 0px) and (max-width: 320px) {
   #folio-dap .scroll-nav-holder {
     display: none; } }
+
+#folio-dap .folio {
+  padding-top: 66px; }
 
 .projectItemLayer1,
 .projectItemLayer2 {

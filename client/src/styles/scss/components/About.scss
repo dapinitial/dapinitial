@@ -11,10 +11,6 @@
     }
 }
 
-.right-column section:first-of-type:not(.blog) {
-    padding-top: 66px;
-}
-
 #about-dap {
     .container {
         @include tablet {
@@ -23,6 +19,9 @@
         @include mobile {
             padding: 100px 20px 0px 20px;
         }
+    }
+    .about {
+        padding-top: 66px;
     }
 }
 

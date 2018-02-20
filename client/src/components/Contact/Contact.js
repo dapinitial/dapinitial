@@ -66,8 +66,9 @@ class Contact extends Component {
           </div>
         </div>
         <div className="right-column">
-          <section id="sec1">
-            <div className="container">
+          <section id="sec1" className="contact line">
+            <div className="
+            container">
               <div className="section-title">
                 <div className="sect-subtitle skrollable skrollable-after">
                   <span>Contacts</span>

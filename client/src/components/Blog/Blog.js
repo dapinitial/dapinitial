@@ -37,7 +37,7 @@ class Blog extends Component {
           </div>
         </div>
         <div className="right-column">
-          <section id="about" className="line blog">
+          <section id="blog" className="line blog">
             <div className="container line">
               <div className="section-title">
                 <div className="sect-subtitle skrollable skrollable-after">

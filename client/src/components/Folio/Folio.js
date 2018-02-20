@@ -33,7 +33,7 @@ class Folio extends Component {
         </div>
         <div className="right-column">
           <FolioNav/>
-          <section id="sec1">
+          <section id="sec1" className="folio">
             <div className="container">
               <div className="section-title">
                 <div className="sect-subtitle skrollable skrollable-after">

@@ -11,21 +11,11 @@ class Subnav extends Component {
     };
   }
 
-  handleScroll() {
-    console.log(document.documentElement.scrollTop);
-
-    if (document.documentElement.scrollTop > 430) {
-      this.setState({className: 'show'})
-    } else {
-      this.setState({className: 'hidden'})
-    }
-  }
-
-  componentDidMount() {
-    window.onscroll = () => {
-      this.handleScroll()
-    };
-  }
+  // handleScroll() {   console.log(document.documentElement.scrollTop);   if
+  // (document.documentElement.scrollTop > 430) {     this.setState({className:
+  // 'show'})   } else {     this.setState({className: 'hidden'})   } }
+  // componentDidMount() {   window.onscroll = () => {     this.handleScroll()
+  // }; }
 
   handleClick = () => {
     TweenLite.to(window, 1, {

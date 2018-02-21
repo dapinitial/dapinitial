@@ -36,7 +36,7 @@ class Folio extends Component {
           <section id="sec1" className="folio">
             <div className="container">
               <div className="section-title">
-                <div className="sect-subtitle skrollable skrollable-after">
+                <div className="sect-subtitle">
                   <span>Folio</span>
                 </div>
                 <h3>What I've been doing</h3>
@@ -46,18 +46,19 @@ class Folio extends Component {
               <div className="section-body">
                 <h3 className="text-title">It has been an honor</h3>
                 <p>
-                  I would love to share my full portfolio with you. Interested parties: Please
-                  make a formal &nbsp;<Link to="/contact">inquiry</Link>&nbsp;
-and specify the type of samples or client you would like me to share. Also
-include who you represent and what the nature of your industry is. As to not
-potentially violate any NDA's with competitors, I screen requests. Conversely,
-the sheer breadth of my work that I am proud of has now become overwhelming...
-and that's a UX problem I choose to pass on solving for now! &#9786;
+                  I would love to share my full portfolio with you. As to not potentially violate
+                  any NDA's with competitors, I screen requests. Interested parties: Please make a
+                  formal &nbsp;<Link to="/contact">inquiry</Link>&nbsp;
+specifying the samples you wish me to share. Along with this request, please
+include who you are and who you represent and what the nature of your industry
+is. Conversely, the sheer breadth of my work that I am proud of has now become
+overwhelming... and that's a UX problem I choose to pass on solving for now!
+&#9786;
                 </p>
               </div>
             </div>
           </section>
-          <Footer className="line"/>
+          <Footer/>
         </div>
       </div>
     );

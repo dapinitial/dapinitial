@@ -80,7 +80,7 @@ class Footer extends Component {
               <li>
                 <a href="tel://2063979040">
                   <i className="fa fa-phone"></i>
-                  +1 (206) 397-9040</a>
+                  Mobile: +1 (206) 397-9040</a>
               </li>
               <li>
                 <a

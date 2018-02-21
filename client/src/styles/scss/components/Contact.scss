@@ -77,6 +77,10 @@ input[type=email]:focus {
     resize: none;
 }
 
+.submitButton {
+    @include unitRight;
+}
+
 #contact-form button[type="submit"],
 .controls button {
     @include fontSmoothing;

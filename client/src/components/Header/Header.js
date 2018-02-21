@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import {Power4, TweenLite} from "gsap";
-import ScrollToPlugin from "gsap/ScrollToPlugin";
 import HeaderNav from './HeaderNav.js';
 
 class Header extends Component {

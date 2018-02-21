@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import helpers from '../../utils/helpers';
-import Subnav from '../Subnav/Subnav.js';
 import Footer from '../Footer/Footer.js';
 
 let backgroundImage = 'http://localhost:3000/images/phonebooth.jpg';
@@ -49,7 +48,6 @@ class Contact extends Component {
   render() {
     return (
       <div id="contact-dap" className="content flex">
-        <Subnav section='contact'/>
         <div className="left-column">
           <div
             className="fixed-column"
@@ -69,7 +67,7 @@ class Contact extends Component {
           <section id="sec1" className="contact line">
             <div className="container">
               <div className="section-title">
-                <div className="sect-subtitle skrollable skrollable-after">
+                <div className="sect-subtitle">
                   <span>Contact</span>
                 </div>
                 <h3>Let's rap</h3>

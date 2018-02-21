@@ -1,16 +1,13 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import ReactPlayer from 'react-player';
-// import Clock from '../Clock/Clock.js'; import Loader from
-// '../Loader/Loader.js';
+// import Loader from '../Loader/Loader.js';
 import About from '../About/About.js';
 import Blog from '../Blog/Blog.js';
 import Folio from '../Folio/Folio.js';
 import Contact from '../Contact/Contact.js';
 import HeroTitle from '../HeroTitle/HeroTitle.js';
 import '../../images/d.svg';
-import {Power4, TweenLite} from "gsap";
-import ScrollToPlugin from "gsap/ScrollToPlugin";
 
 class Home extends Component {
   constructor(props) {
@@ -18,20 +15,6 @@ class Home extends Component {
     this.state = {
       videoURL: 'https://www.youtube.com/watch?v=dVkK36KOcqs'
     };
-  }
-
-  handleClick() {
-    // prevent page refresh (ie 9) e.stopPropagation();
-    // e.nativeEvent.stopImmediatePropagation();
-    TweenLite.to(window, 1, {
-      scrollTo: {
-        y: '.mainSectionContainer',
-        autoKill: false,
-        autoRound: false,
-        force3D: true
-      },
-      ease: Power4.easeOut
-    });
   }
 
   render() {
@@ -53,15 +36,7 @@ class Home extends Component {
                     muted
                     loop/>
                 </div>
-                <div className='go-next-section'>
-                  <Link onClick={this.handleClick} to='/about'>
-                    <i className='fa fa-angle-down'></i>
-                    <i className='fa fa-angle-down'></i>
-                    <i className='fa fa-angle-down'></i>
-                    <i className='fa fa-angle-down'></i>
-                  </Link>
-                </div>
-                <HeroTitle/> {/* <Clock deadline={this.state.deadline}/> */}
+                <HeroTitle/>
               </div>
             </div>
             <Route path='/about' component={About}/>

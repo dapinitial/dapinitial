@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Subnav from '../Subnav/Subnav.js';
 import {Link} from 'react-router-dom';
 import Footer from '../Footer/Footer';
 
@@ -20,7 +19,6 @@ class Blog extends Component {
   render() {
     return (
       <div id="blog-dap" className="content flex">
-        <Subnav section='blog'/>
         <div className="left-column">
           <div
             className="fixed-column"

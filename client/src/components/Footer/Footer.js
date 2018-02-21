@@ -100,9 +100,9 @@ class Footer extends Component {
             <div className="container">
               <p>
                 <span>
-                  &copy; davidpuerto.com 2018.
+                  davidpuerto.com&nbsp;&copy;&nbsp;2018.
                 </span>
-                &nbsp; All rights reserved.</p>
+              </p>
               <ScrollButton scrollStepInPx="50" delayInMs="16.66"/>
             </div>
           </div>

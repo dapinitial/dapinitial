@@ -68,7 +68,7 @@ const panels = [
   }, {
     icon: 'fa fa-briefcase',
     dates: '2014-2015',
-    company: 'Facebook, Inc',
+    company: 'Facebook',
     officeLocation: 'in Seattle, WA',
     title: 'UI Designer',
     skills: [
@@ -149,8 +149,8 @@ const panels = [
   // from numerous silos thr' +       'oughout the organization including legacy
   // style sheets from internal and offshor' +       'e teams for Account
   // Management and Device Management. Removed dependency on Boot' +       'strap
-  // and took CSS code bloat down from over 500 kb to under 50 kb gzipped.Hand '
-  // +       '- combed through every bit of HTML / JSTL and removed excess markup
+  // and took CSS code bloat down from over 500 kb to under 50 kb gzipped.Hand ' +
+  //       '- combed through every bit of HTML / JSTL and removed excess markup
   // reducing ove' +       'rall codebase by over 50 %.',   links: [     { url:
   // '',       text: ''     }   ] }, {   icon: 'fa fa-briefcase',   dates:
   // '2014-2015',   company: 'Sherwin Williams',   officeLocation: 'in Cleveland,
@@ -170,8 +170,8 @@ const panels = [
   // built in Flex.Designed visual mockups for NADA compet' + 'ition.Produced
   // prototypes for future products.Redesigned the homepage and campai' + 'gned
   // for a move away from Flash back towards traditional web technologies.Played'
-  // +       ' catcher on company kickball team.',   links: [     {       url: '',
-  //       text: ''     }   ] }, {   icon: 'fa fa-briefcase',   dates:
+  // +       ' catcher on company kickball team.',   links: [     {       url:
+  // '',       text: ''     }   ] }, {   icon: 'fa fa-briefcase',   dates:
   // '2004-2006',   company: 'The Center for Rural Development', officeLocation:
   // 'in Somerset, KY',   title: 'Web Designer', skills: ['Quintessential foot in
   // the door'],   summary: 'Worked under the supervision of a seasoned designer

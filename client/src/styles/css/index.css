@@ -1966,17 +1966,11 @@ a[class^=projectLink] {
 .section-title h3 {
   float: left;
   padding: 14px 30px;
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
   position: relative;
   margin-bottom: 20px;
-  font-size: 26px;
-  font-weight: bold;
-  color: transparent;
-  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text; }
+  font-size: 26px; }
 
 .section-title h3:before {
   content: '';

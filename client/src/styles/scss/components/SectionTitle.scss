@@ -1,12 +1,14 @@
 /* ---------Section title --------------------------------------*/
 
 .section-title {
+    @include line;
     float: left;
     width: 100%;
     position: relative;
 }
 
 .section-title h2 {
+    @include line;
     float: left;
     width: 100%;
     position: relative;
@@ -17,9 +19,14 @@
     text-transform: uppercase;
     text-align: left;
     font-family: 'Oswald', sans-serif;
+    line-height: 48px;
+    @include mobile {
+        padding: 0 20px;
+    }
 }
 
 .section-title h3 {
+    @include line;
     float: left;
     padding: 14px 30px;
     color: #000;
@@ -101,6 +108,7 @@
 }
 
 .text-title {
+    @include line;
     float: left;
     width: 100%;
     position: relative;
@@ -111,7 +119,10 @@
     color: #191919;
     text-transform: uppercase;
     text-align: left;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+    @include mobile {
+        letter-spacing: 1px;
+    }
 }
 
 .small-separator {

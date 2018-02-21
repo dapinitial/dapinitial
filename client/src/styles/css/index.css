@@ -164,7 +164,7 @@ table {
 *:before {
   box-sizing: border-box; }
 
-.container:after, .content-holder:after, .content:after, .wrapper:after, .section-title:after, .panel:after, .panel__label:after, .panel__inner:after, .panel__content:after, .panel__content h4:after, .panel__content ul:after, .hero-wrapper:after, .player-wrapper:after, footer:after {
+.right-column:after, .container:after, .content-holder:after, .content:after, .wrapper:after, .section-title:after, .section-body:after, .panel:after, .panel__label:after, .panel__inner:after, .panel__content:after, .panel__content h4:after, .panel__content ul:after, .hero-wrapper:after, .player-wrapper:after, .section-title h2:after, .section-title h3:after, .text-title:after, footer:after {
   content: '';
   display: table;
   clear: both; }
@@ -292,6 +292,10 @@ a:active {
 
 .unit3of4 {
   width: 75%; }
+
+@media (min-width: 0px) and (max-width: 320px) {
+  .right-column {
+    width: 100% !important; } }
 
 .flex {
   display: flex; }
@@ -712,6 +716,10 @@ blockquote p {
     .left-column {
       display: none; } }
 
+@media (min-width: 0px) and (max-width: 320px) {
+  .right-column {
+    width: 100%; } }
+
 @media (min-width: 320px) and (max-width: 768px) {
   #about-dap .container {
     padding: 100px 20px 0px 20px; } }
@@ -965,6 +973,14 @@ blockquote p {
 
 .owl-next {
   float: right; }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  #contact-dap .container {
+    padding: 100px 20px 0px 20px; } }
+
+@media (min-width: 0px) and (max-width: 320px) {
+  #contact-dap .container {
+    padding: 100px 20px 0px 20px; } }
 
 .contact-info {
   float: left;
@@ -1941,7 +1957,11 @@ a[class^=projectLink] {
   color: #191919;
   text-transform: uppercase;
   text-align: left;
-  font-family: 'Oswald', sans-serif; }
+  font-family: 'Oswald', sans-serif;
+  line-height: 48px; }
+  @media (min-width: 0px) and (max-width: 320px) {
+    .section-title h2 {
+      padding: 0 20px; } }
 
 .section-title h3 {
   float: left;
@@ -2027,7 +2047,10 @@ a[class^=projectLink] {
   color: #191919;
   text-transform: uppercase;
   text-align: left;
-  padding-bottom: 10px; }
+  margin-bottom: 10px; }
+  @media (min-width: 0px) and (max-width: 320px) {
+    .text-title {
+      letter-spacing: 1px; } }
 
 .small-separator {
   float: left;

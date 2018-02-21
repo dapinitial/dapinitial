@@ -13,7 +13,7 @@ const panels = [
   {
     icon: 'fa fa-briefcase',
     dates: '2017-Present',
-    company: 'WebMD Health Services',
+    company: 'WebMD',
     officeLocation: 'in Seattle, WA',
     title: 'Senior User Experience Design Engineer',
     skills: [
@@ -35,7 +35,7 @@ const panels = [
   }, {
     icon: 'fa fa-briefcase',
     dates: '2015-2016',
-    company: 'Starbucks Coffee Company',
+    company: 'Starbucks',
     officeLocation: 'in Seattle, WA',
     title: 'Senior Product Designer',
     skills: [
@@ -87,7 +87,7 @@ const panels = [
   }, {
     icon: 'fa fa-briefcase',
     dates: '2013-2013',
-    company: 'FujiFilm SonoSite',
+    company: 'SonoSite',
     officeLocation: 'in Seattle, WA',
     title: 'UX Prototyper',
     skills: [
@@ -105,7 +105,7 @@ const panels = [
   }, {
     icon: 'fa fa-graduation-cap',
     dates: '2017-2017',
-    company: 'CodeFellows 101-401',
+    company: 'CodeFellows',
     officeLocation: 'in Seattle, WA',
     title: 'JavaScript Certificate',
     skills: [''],
@@ -120,13 +120,16 @@ const panels = [
   }, {
     icon: 'fa fa-graduation-cap',
     dates: '2004-2007',
-    company: 'The Art Institute of Atlanta & Online',
+    company: 'College',
     officeLocation: '',
     title: 'Bachelor of Science',
     skills: [
       'Interactive Media Design', 'Focus on Flash ActionScript 2.0'
     ],
-    summary: 'I earned my B.S. degree',
+    summary: 'I earned my B.S. degree from the Art Institute of Atlanta ground campus & Online' +
+        '. I graduated Best of Show and was awarded for my interactive media design portf' +
+        'olio at portfolio review at Soldiers and Sailors Hall 12/2007 in Pittsburgh, PA.' +
+        ' Selected works were used to recruit prosepctive highschool students.',
     links: [
       {
         url: '',
@@ -146,8 +149,8 @@ const panels = [
   // from numerous silos thr' +       'oughout the organization including legacy
   // style sheets from internal and offshor' +       'e teams for Account
   // Management and Device Management. Removed dependency on Boot' +       'strap
-  // and took CSS code bloat down from over 500 kb to under 50 kb gzipped.Hand ' +
-  //       '- combed through every bit of HTML / JSTL and removed excess markup
+  // and took CSS code bloat down from over 500 kb to under 50 kb gzipped.Hand '
+  // +       '- combed through every bit of HTML / JSTL and removed excess markup
   // reducing ove' +       'rall codebase by over 50 %.',   links: [     { url:
   // '',       text: ''     }   ] }, {   icon: 'fa fa-briefcase',   dates:
   // '2014-2015',   company: 'Sherwin Williams',   officeLocation: 'in Cleveland,
@@ -167,8 +170,8 @@ const panels = [
   // built in Flex.Designed visual mockups for NADA compet' + 'ition.Produced
   // prototypes for future products.Redesigned the homepage and campai' + 'gned
   // for a move away from Flash back towards traditional web technologies.Played'
-  // +       ' catcher on company kickball team.',   links: [     {       url:
-  // '',       text: ''     }   ] }, {   icon: 'fa fa-briefcase',   dates:
+  // +       ' catcher on company kickball team.',   links: [     {       url: '',
+  //       text: ''     }   ] }, {   icon: 'fa fa-briefcase',   dates:
   // '2004-2006',   company: 'The Center for Rural Development', officeLocation:
   // 'in Somerset, KY',   title: 'Web Designer', skills: ['Quintessential foot in
   // the door'],   summary: 'Worked under the supervision of a seasoned designer
@@ -305,7 +308,7 @@ class About extends Component {
               <Awards/>
             </div>
           </section>
-          <Footer class="line"/>
+          <Footer className="line"/>
 
         </div>
       </div>

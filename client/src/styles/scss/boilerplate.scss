@@ -467,6 +467,10 @@ a:active {
 
 .right-column {
     @include lastUnit;
+    @include mobile {
+        @include line;
+        width: 100% !important;
+    }
 }
 
 .flex {

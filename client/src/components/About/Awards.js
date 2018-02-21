@@ -13,10 +13,8 @@ class Awards extends Component {
         loop: true,
         margin: 30,
         nav: true,
-        singleItem: true,
-        autoHeight: true,
         navText: [
-          "<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"
+          "<i className='fas fa-chevron-left'></i>", "<i className='fas fa-chevron-right'></i>"
         ],
         responsiveClass: true
       }
@@ -38,7 +36,11 @@ class Awards extends Component {
           </div>
 
         </div>
-        <OwlCarousel className="" {...this.state.options}>
+        <OwlCarousel
+          className=""
+          {...this.state.options}
+          singleitem="true"
+          autoheight="true">
           <div className="item">
             <img
               src={hackHousingImage}
@@ -48,9 +50,9 @@ class Awards extends Component {
               Hacking the housing market: Tech teams use open data to help people find
               affordable homes.</p>
             <p>
-              <em class="italics">This special series focuses on important community issues,
-                innovative solutions to societal challenges, and people and non-profit groups
-                making an impact through technology.</em>
+              <em className="italics">This special series focuses on important community
+                issues, innovative solutions to societal challenges, and people and non-profit
+                groups making an impact through technology.</em>
             </p>
 
             <Link
@@ -65,15 +67,6 @@ class Awards extends Component {
               <i className="fa fa-angle-right"></i>
               <span>Via GeekWire</span>
             </Link>
-
-          </div>
-          <div className="item">
-            <h3>Best of Show 2007</h3>
-            <p>
-              Representing the Art Institute of Atlanta and Online Divisions I took home the
-              top award from my design college at the Portfolio Review for Interactive Media
-              Design Bachelor's graduates.</p>
-
           </div>
         </OwlCarousel>
       </div>

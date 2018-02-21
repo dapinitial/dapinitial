@@ -4,7 +4,7 @@
 *:before {
   box-sizing: border-box; }
 
-.container:after, .content-holder:after, .content:after, .wrapper:after {
+.right-column:after, .container:after, .content-holder:after, .content:after, .wrapper:after {
   content: '';
   display: table;
   clear: both; }
@@ -120,6 +120,10 @@ a:active {
 
 .unit3of4 {
   width: 75%; }
+
+@media (min-width: 0px) and (max-width: 320px) {
+  .right-column {
+    width: 100% !important; } }
 
 .flex {
   display: flex; }

@@ -8,8 +8,8 @@ class HeroTitle extends Component {
   }
 
   componentDidMount() {
-    let words = ['Hello World.', 'Designed and Developed', 'By David Puerto in Seattle.'];
-    let colors = ['#ffffff', '#ff3300', 'whitesmoke'];
+    let words = ['Hello World.', 'Experience Designs', 'Developed by David Puerto in Seattle', 'Website work in process.'];
+    let colors = ['rgba(0,0,0,.85)', '#ff3300', 'rgba(0,0,0,.85)'];
     if (colors === undefined) 
       colors = ['#fff'];
     var visible = true;

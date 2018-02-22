@@ -603,7 +603,9 @@ blockquote p {
   .hero-title h4:before {
     background: #FF4400; } }
 
-/* ---------Button--------------------------------------*/
+/***********************************************************************************
+*	+ BUTTONS
+***********************************************************************************/
 .btn {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -667,14 +669,21 @@ blockquote p {
   color: #000; }
 
 .loader-holder {
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  top: 50%;
-  left: 50%;
-  margin-top: -20px;
-  margin-left: -20px;
-  z-index: 150; }
+  background: #292929;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100vh;
+  width: 100vw; }
 
 .loader-inner {
   top: 0;
@@ -686,11 +695,20 @@ blockquote p {
   transition: all 0.4s ease-in-out; }
 
 .loader {
-  float: left;
   width: 50px;
   height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
   border-left: 10px solid #191919;
   animation: load8 1.1s infinite linear; }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .loader {
+      top: 90%; } }
+  @media (min-width: 769px) {
+    .loader {
+      top: 90%; } }
 
 .loader,
 .loader:after {
@@ -1350,7 +1368,6 @@ a[class^=projectLink] {
   background: url(../../images/d.svg) no-repeat;
   transform: scale(0.55); }
 
-/*************** || NAVIGATION || ***************/
 .sectionLinks {
   color: #fff;
   height: 75px;
@@ -1431,7 +1448,8 @@ a[class^=projectLink] {
       width: 100%; } }
 
 .logo-holder {
-  background: #FF4400;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fc8600+0,ff3300+75 */
+  background: #ff3300;
   float: left;
   max-width: 240px;
   height: 70px;
@@ -1992,10 +2010,22 @@ a[class^=projectLink] {
   text-transform: uppercase;
   width: 600px;
   height: 200px; }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .console-container {
+      font-size: 40px;
+      top: 0vh;
+      left: 0vw;
+      text-align: left;
+      width: 60vw;
+      height: 200px; } }
   @media (min-width: 0px) and (max-width: 320px) {
     .console-container {
-      font-size: 64px;
-      line-height: 60px; } }
+      font-size: 40px;
+      top: 0vh;
+      left: 0vw;
+      text-align: left;
+      width: 60vw;
+      height: 200px; } }
 
 .console-underscore {
   display: inline-block;
@@ -2028,7 +2058,7 @@ a[class^=projectLink] {
 .section-title h3 {
   float: left;
   padding: 14px 30px;
-  color: #fff;
+  color: #111;
   text-transform: uppercase;
   position: relative;
   margin-bottom: 20px;
@@ -2250,7 +2280,3 @@ footer {
 .copyright {
   color: #eee;
   display: inline-block; }
-
-/***********************************************************************************
-*	+ BUTTONS
-***********************************************************************************/

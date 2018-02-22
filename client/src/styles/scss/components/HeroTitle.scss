@@ -159,9 +159,21 @@
     text-transform: uppercase;
     width: 600px;
     height: 200px;
+    @include tablet {
+        font-size: 40px;
+        top: 0vh;
+        left: 0vw;
+        text-align: left;
+        width: 60vw;
+        height: 200px;
+    }
     @include mobile {
-        font-size: 64px;
-        line-height: 60px;
+        font-size: 40px;
+        top: 0vh;
+        left: 0vw;
+        text-align: left;
+        width: 60vw;
+        height: 200px;
     }
 }
 

@@ -33,7 +33,7 @@ class HeaderNav extends Component {
               </div>
               <ul className="hidden">
                 <li>
-                  <Link to="/folio" className="custom-scroll-link">Check back often</Link>
+                  <Link to="/folio">Check back often</Link>
                 </li>
                 {/* <li>
                   <Link to="/folio" className="custom-scroll-link">Facebook</Link>

@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Subnav from '../Subnav/Subnav.js';
 import {Link} from 'react-router-dom';
 import FolioNav from './FolioNav.js';
 import Footer from '../Footer/Footer.js';
@@ -15,7 +14,6 @@ class Folio extends Component {
   render() {
     return (
       <div id="folio-dap" className="content flex">
-        <Subnav section='folio'/>
         <div className="left-column">
           <div
             className="fixed-column"

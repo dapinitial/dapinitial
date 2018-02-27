@@ -35,7 +35,7 @@ class Contact extends Component {
     this.setState({
       name: "",
       email: "",
-      message: "Thank you for your message, " + this.state.name + "!"
+      message: "Thank you for your message, " + this.state.name + ".  Give me a moment while I respond thoughtfully."
     });
   }
 
@@ -121,9 +121,6 @@ class Contact extends Component {
                       </button>
                     </div>
                   </form>
-                </div>
-                <div className="contact-info">
-                  <span>Give me a moment while I respond thoughtfully.</span>
                 </div>
               </div>
             </div>

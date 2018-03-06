@@ -11,7 +11,7 @@ class HeroTitle extends Component {
     let words = ['Hello World.', 'Experience Designs', 'Developed by David Puerto in Seattle', 'Website work in process.'];
     let colors = ['rgba(0,0,0,.85)', '#ff3300', 'rgba(0,0,0,.85)'];
     if (colors === undefined) 
-      colors = ['#fff'];
+      colors = ['#000'];
     var visible = true;
     var con = document.getElementById('console');
     var letterCount = 1;

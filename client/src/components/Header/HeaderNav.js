@@ -4,7 +4,6 @@ import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 class HeaderNav extends Component {
   constructor(props) {
     super(props);
-
     this.state = {};
 
   }
@@ -23,41 +22,41 @@ class HeaderNav extends Component {
         }}>
           <ul>
             <li>
-              <Link onClick={this.handleClick} to='/about'>About</Link>
+              <Link to='/about'>About</Link>
             </li>
             <li>
-              <Link onClick={this.handleClick} to='/blog'>Blog</Link>
+              <Link to='/blog'>Blog</Link>
             </li>
             <li className="subnav">
               <div className="subnavicon">Folio
               </div>
               <ul className="hidden">
                 <li>
-                  <Link to="/folio">Check back often</Link>
+                  <Link to='/folio'>Check back often</Link>
                 </li>
                 {/* <li>
-                  <Link to="/folio" className="custom-scroll-link">Facebook</Link>
+                  <Link params={{ reveal: !this.currentState }} to="/folio" className="custom-scroll-link">Facebook</Link>
                 </li>
                 <li>
-                  <Link to="/folio" className="custom-scroll-link">SonoSite</Link>
+                  <Link params={{ reveal: !this.currentState }} to="/folio" className="custom-scroll-link">SonoSite</Link>
                 </li>
                 <li>
-                  <Link to="/folio" className="custom-scroll-link">Zillow</Link>
+                  <Link params={{ reveal: !this.currentState }} to="/folio" className="custom-scroll-link">Zillow</Link>
                 </li>
                 <li>
-                  <Link to="/folio" className="custom-scroll-link">Starbucks</Link>
+                  <Link params={{ reveal: !this.currentState }} to="/folio" className="custom-scroll-link">Starbucks</Link>
                 </li>
                 <li>
-                  <Link to="/folio" className="custom-scroll-link">WebMD</Link>
+                  <Link params={{ reveal: !this.currentState }} to="/folio" className="custom-scroll-link">WebMD</Link>
                 </li> */}
               </ul>
             </li>
             <li>
-              <Link onClick={this.handleClick} to='/contact'>Contact</Link>
+              <Link to='/contact'>Contact</Link>
             </li>
           </ul>
         </nav>
-      </div >
+      </div>
     )
   }
 }

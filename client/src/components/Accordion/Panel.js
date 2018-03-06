@@ -25,11 +25,9 @@ class Panel extends Component {
       icon,
       dates,
       company,
-      officeLocation,
       title,
       skills,
       summary,
-      links,
       activeTab,
       index,
       activateTab

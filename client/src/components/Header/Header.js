@@ -40,7 +40,7 @@ class Header extends Component {
             <span className="nbs"></span>
           </div>
         </header>
-        <HeaderNav reveal={this.state.reveal}/>
+        <HeaderNav reveal={this.state.reveal} toggleClass={this.toggleClass}/>
       </div>
     )
   }

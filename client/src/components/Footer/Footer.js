@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
 import ScrollButton from './ScrollButton.js';
 
 class Footer extends Component {

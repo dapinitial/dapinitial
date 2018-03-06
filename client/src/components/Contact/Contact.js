@@ -78,7 +78,7 @@ class Contact extends Component {
                 <h3 className="text-title">E.T. Phone Home</h3>
                 <p>
                   You know the feeling: Receiving a *real* letter or a postcard? That's those feel
-                  goofs when I get messages from this website. So, go ahead, don't be shy, fill
+                  goods when I get messages from this website. So, go ahead, don't be shy, fill
                   out the form below and start a correspondance with yours truly. You'll be glad
                   you did.&nbsp;&#9786;
                 </p>

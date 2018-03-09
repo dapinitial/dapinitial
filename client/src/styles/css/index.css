@@ -1438,7 +1438,8 @@ a[class^=projectLink] {
   left: 0;
   width: 40%;
   height: 70px;
-  z-index: 9999;
+  overflow: hidden;
+  z-index: 100;
   transform: translate3d(0, 0, 0); }
   @media (min-width: 320px) and (max-width: 768px) {
     .header {
@@ -1455,7 +1456,7 @@ a[class^=projectLink] {
   height: 70px;
   position: relative;
   padding: 0 30px;
-  line-height: 70px; }
+  line-height: 40px; }
 
 .nav-button {
   position: absolute;
@@ -1890,7 +1891,6 @@ a[class^=projectLink] {
   padding: 0;
   margin: 0;
   margin-bottom: 10px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65);
   text-transform: uppercase; }
   @media (min-width: 0px) and (max-width: 320px) {
     .hero-title h3 {
@@ -1921,10 +1921,6 @@ a[class^=projectLink] {
 .hero-title h4 a,
 .hero-title h4 {
   color: #fff;
-  -webkit-transition: all 200ms linear;
-  -moz-transition: all 200ms linear;
-  -o-transition: all 200ms linear;
-  -ms-transition: all 200ms linear;
   transition: all 200ms linear; }
 
 .halig-center h3,
@@ -1983,10 +1979,6 @@ a[class^=projectLink] {
   width: 100%;
   height: 4px;
   background: rgba(255, 255, 255, 0.51);
-  -webkit-transition: all 500ms linear;
-  -moz-transition: all 500ms linear;
-  -o-transition: all 500ms linear;
-  -ms-transition: all 500ms linear;
   transition: all 500ms linear; }
 
 .console-container {
@@ -2000,13 +1992,12 @@ a[class^=projectLink] {
   text-align: center;
   display: block;
   position: absolute;
-  color: white;
+  color: #000;
   top: -20vh;
   bottom: 0;
   left: -50vw;
   right: 0;
   margin: auto;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65);
   text-transform: uppercase;
   width: 600px;
   height: 200px; }
@@ -2028,6 +2019,7 @@ a[class^=projectLink] {
       height: 200px; } }
 
 .console-underscore {
+  color: #000;
   display: inline-block;
   position: relative;
   top: -0.14em;

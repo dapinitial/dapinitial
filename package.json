@@ -23,5 +23,8 @@
     "express": "^4.15.5",
     "nodemailer": "^4.1.1",
     "raf": "^3.4.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0"
   }
 }

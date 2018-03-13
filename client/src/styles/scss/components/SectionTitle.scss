@@ -1,6 +1,7 @@
 /* ---------Section title --------------------------------------*/
 
 .section-title {
+    @include fontSmoothing;
     @include line;
     float: left;
     width: 100%;
@@ -8,6 +9,7 @@
 }
 
 .section-title h2 {
+    @include fontSmoothing;
     @include line;
     float: left;
     width: 100%;
@@ -26,6 +28,7 @@
 }
 
 .section-title h3 {
+    @include fontSmoothing;
     @include line;
     float: left;
     padding: 14px 30px;
@@ -94,6 +97,7 @@
 }
 
 .text-subtitle {
+    @include fontSmoothing;
     float: left;
     width: 100%;
     position: relative;
@@ -107,6 +111,7 @@
 }
 
 .text-title {
+    @include fontSmoothing;
     @include line;
     float: left;
     width: 100%;
